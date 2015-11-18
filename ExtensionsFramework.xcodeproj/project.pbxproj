@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E58534A01BFCC7D000825144 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E585349E1BFCC7D000825144 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E58534A11BFCC7D000825144 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E585349F1BFCC7D000825144 /* NSString+Extensions.m */; settings = {ASSET_TAGS = (); }; };
+		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; settings = {ASSET_TAGS = (); }; };
 		E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */; };
-		E5E06C5C1BEC9A5900C92020 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E06C5A1BEC9A5900C92020 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5E06C601BEC9A6200C92020 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E06C5E1BEC9A6200C92020 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5E06C611BEC9A6200C92020 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E06C5F1BEC9A6200C92020 /* NSString+Extensions.m */; settings = {ASSET_TAGS = (); }; };
-		E5E06C631BEC9A6B00C92020 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E06C621BEC9A6B00C92020 /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,15 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E585349E1BFCC7D000825144 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		E585349F1BFCC7D000825144 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E58534A41BFCC7E400825144 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionsFramework.h; sourceTree = "<group>"; };
+		E58534A51BFCC7E400825144 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AA7D391BEB864E00B8EFA7 /* ExtensionsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFrameworkTests.swift; sourceTree = "<group>"; };
 		E5AA7D401BEB864E00B8EFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5E06C5A1BEC9A5900C92020 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtensionsFramework.h; path = ExtensionsFramework/ExtensionsFramework/SupportingFiles/ExtensionsFramework.h; sourceTree = SOURCE_ROOT; };
-		E5E06C5B1BEC9A5900C92020 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ExtensionsFramework/ExtensionsFramework/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
-		E5E06C5E1BEC9A6200C92020 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extensions.h"; path = "ExtensionsFramework/ExtensionsFramework/Objective-CExtensions/NSString+Extensions.h"; sourceTree = SOURCE_ROOT; };
-		E5E06C5F1BEC9A6200C92020 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extensions.m"; path = "ExtensionsFramework/ExtensionsFramework/Objective-CExtensions/NSString+Extensions.m"; sourceTree = SOURCE_ROOT; };
-		E5E06C621BEC9A6B00C92020 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = ExtensionsFramework/ExtensionsFramework/SwiftExtensions/StringExtensions.swift; sourceTree = SOURCE_ROOT; };
 		E5E06C641BEC9ADA00C92020 /* ExtensionsFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExtensionsFramework.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 		E5AA7D491BEB86AE00B8EFA7 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				E5E06C621BEC9A6B00C92020 /* StringExtensions.swift */,
+				E58534A21BFCC7DB00825144 /* StringExtensions.swift */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 		E5AA7D4A1BEB86B600B8EFA7 /* Objective-CExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				E5E06C5E1BEC9A6200C92020 /* NSString+Extensions.h */,
-				E5E06C5F1BEC9A6200C92020 /* NSString+Extensions.m */,
+				E585349E1BFCC7D000825144 /* NSString+Extensions.h */,
+				E585349F1BFCC7D000825144 /* NSString+Extensions.m */,
 			);
 			path = "Objective-CExtensions";
 			sourceTree = "<group>";
@@ -114,8 +114,8 @@
 		E5AA7D4C1BEB86DB00B8EFA7 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E5E06C5A1BEC9A5900C92020 /* ExtensionsFramework.h */,
-				E5E06C5B1BEC9A5900C92020 /* Info.plist */,
+				E58534A41BFCC7E400825144 /* ExtensionsFramework.h */,
+				E58534A51BFCC7E400825144 /* Info.plist */,
 				E5E06C641BEC9ADA00C92020 /* ExtensionsFramework.podspec */,
 			);
 			name = SupportingFiles;
@@ -129,8 +129,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E06C601BEC9A6200C92020 /* NSString+Extensions.h in Headers */,
-				E5E06C5C1BEC9A5900C92020 /* ExtensionsFramework.h in Headers */,
+				E58534A01BFCC7D000825144 /* NSString+Extensions.h in Headers */,
+				E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E06C631BEC9A6B00C92020 /* StringExtensions.swift in Sources */,
-				E5E06C611BEC9A6200C92020 /* NSString+Extensions.m in Sources */,
+				E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */,
+				E58534A11BFCC7D000825144 /* NSString+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +354,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/ExtensionsFramework/ExtensionsFramework/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtensionsFramework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razvanb.ExtensionsFramework;
@@ -372,7 +372,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/ExtensionsFramework/ExtensionsFramework/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtensionsFramework/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razvanb.ExtensionsFramework;
