@@ -7,7 +7,6 @@
 //
 
 #import <CoreData/CoreData.h>
-#import "NSManagedObjectContext+Extensions.h"
 
 @interface NSManagedObject (Extensions)
 

@@ -1,6 +1,6 @@
 //
 //  UIView+Extensions.h
-//  BonusCards
+//  ExtensionsFramework
 //
 //  Created by Simon Brückner on 07.06.13.
 //

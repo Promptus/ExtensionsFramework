@@ -7,6 +7,7 @@
 //
 
 #import "NSManagedObject+Extensions.h"
+#import "NSManagedObjectContext+Extensions.h"
 
 @implementation NSManagedObject (Extensions)
 

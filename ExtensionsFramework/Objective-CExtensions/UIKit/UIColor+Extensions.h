@@ -1,6 +1,6 @@
 //
 //  UIColor+Extensions.h
-//  CocoaExtensions
+//  ExtensionsFramework
 //
 //  Created by Lars Kuhnt on 06.03.14.
 //  Copyright (c) 2014 Promptus. All rights reserved.

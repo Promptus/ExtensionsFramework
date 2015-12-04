@@ -10,10 +10,10 @@
 #import "NSFetchRequest+Extensions.h"
 #import "NSArray+Extensions.h"
 
+
 typedef void (^ContextCallback)(NSManagedObjectContext *context);
 typedef void (^ContextObjectCallback)(NSManagedObjectContext *context, id object);
 typedef void (^ContextObjectsCallback)(NSManagedObjectContext *context, NSArray *objects);
-
 
 @interface NSManagedObjectContext(Extensions)
 
