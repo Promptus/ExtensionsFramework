@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/Promptus/ExtensionsFramework.git"
   s.license      = 'MIT'
-  s.author       = { "Lars Kuhnt" => "lars.kuhnt@gmail.com" }
+  s.author       = { "Razvan Benga" => "razvanb@fortech.ro" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git" }
   s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'

@@ -27,4 +27,7 @@
 - (NSString *)ce_removeAllWhiteSpaces;
 - (NSString *)ce_truncateEmptyStringComponentsSeparatedByCharacter:(NSString *)stringSeparator;
 
+- (NSNumber *)numberFromLocalizedString;
+- (NSDecimalNumber *)decimalNumberFromString;
+
 @end

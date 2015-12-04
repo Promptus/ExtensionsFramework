@@ -8,6 +8,8 @@
 
 #import "NSString+Extensions.h"
 
+static NSNumberFormatter *floatFormatter;
+
 @implementation NSString (Extensions)
 
 #pragma mark Regular expressions
@@ -88,6 +90,21 @@
     }
     
     return [finalStringComponents componentsJoinedByString:stringSeparator];
+}
+
+- (NSNumber *)numberFromLocalizedString {
+    if (!floatFormatter) {
+        floatFormatter = [[NSNumberFormatter alloc] init];
+        [floatFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        [floatFormatter setLocale:[NSLocale currentLocale]];
+        [floatFormatter setMaximumFractionDigits:2];
+    }
+    
+    return [floatFormatter numberFromString:self];
+}
+
+- (NSDecimalNumber *)decimalNumberFromString {
+    return [NSDecimalNumber decimalNumberWithDecimal:[self numberFromLocalizedString].decimalValue];
 }
 
 
