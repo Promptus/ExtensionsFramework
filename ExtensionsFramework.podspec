@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.author       = { "Razvan Benga" => "razvanb@fortech.ro" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git" }
+  s.dependency 'Reachability', '~> 3.1.1'
+  s.dependency 'iCarousel',    '~> 1.7'
   s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'
   s.requires_arc = true
 

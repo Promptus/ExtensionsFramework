@@ -1,6 +1,6 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, "8.0"
-use_frameworks!
+platform :ios, "7.0"
+#use_frameworks!
 
 link_with 'ExtensionsFramework', 'ExtensionsFrameworkTests'
 
