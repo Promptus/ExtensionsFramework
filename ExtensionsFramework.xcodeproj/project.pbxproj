@@ -17,7 +17,7 @@
 		A51421251C182A2500796FE9 /* WeekPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A514211D1C182A2500796FE9 /* WeekPickerItem.h */; };
 		A51421261C182A2500796FE9 /* WeekPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A514211E1C182A2500796FE9 /* WeekPickerItem.m */; };
 		A51421271C182A2500796FE9 /* WeekPickerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = A514211F1C182A2500796FE9 /* WeekPickerItem.xib */; };
-		A514212C1C182A2C00796FE9 /* PPWebBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */; };
+		A514212C1C182A2C00796FE9 /* PPWebBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A514212D1C182A2C00796FE9 /* PPWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */; };
 		A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */; };
 		A51421321C182A3400796FE9 /* ApplicationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421301C182A3400796FE9 /* ApplicationHelper.h */; };
