@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		285E13DF0DB954E146E5E389 /* Pods_ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AD0F7F000FFE5D5B0B556 /* Pods_ExtensionsFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		41007D48F4D8273F93FDF331 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A781A0DB42436CF7E9C7F22 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6AB5FD082D16C106F3ACE621 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A781A0DB42436CF7E9C7F22 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8D543E1CBF4397D3F02620AB /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
 		A5A9C80C1C11D8E600289DE3 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */; };
@@ -59,10 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5DB24C7DDCD04267FC0A7C98 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		7A781A0DB42436CF7E9C7F22 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.release.xcconfig"; sourceTree = "<group>"; };
-		9FCC1BDBF0D4661A00E6F2DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		A5A9C80E1C11DC2900289DE3 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
@@ -110,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AB5FD082D16C106F3ACE621 /* Pods.framework in Frameworks */,
 				285E13DF0DB954E146E5E389 /* Pods_ExtensionsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +116,6 @@
 				E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */,
 				8D543E1CBF4397D3F02620AB /* (null) in Frameworks */,
 				ABF31C6EB6AD507DDA45E1B1 /* (null) in Frameworks */,
-				41007D48F4D8273F93FDF331 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +125,6 @@
 		70E481362F7F2E0968C620A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9FCC1BDBF0D4661A00E6F2DD /* Pods.debug.xcconfig */,
-				5DB24C7DDCD04267FC0A7C98 /* Pods.release.xcconfig */,
 				DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */,
 				8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */,
 			);
@@ -194,7 +185,6 @@
 		C6CB03551B0140B5618E8F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7A781A0DB42436CF7E9C7F22 /* Pods.framework */,
 				F80AD0F7F000FFE5D5B0B556 /* Pods_ExtensionsFramework.framework */,
 			);
 			name = Frameworks;

@@ -25,19 +25,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		521B35B00EA234FC504634E8A0C8AF37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6BB5899C6622B5C1BBCE7C478138F7B;
-			remoteInfo = Reachability;
-		};
-		F1BA07E5C15174229C6EC07BAC325D8B /* PBXContainerItemProxy */ = {
+		3885D2C2A77B2BB3E85D7217BF27BE29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3634ABA74A6F41DB3C7516A583373EE8;
 			remoteInfo = iCarousel;
+		};
+		8FC7940477E775EECD18EFBEB4AD17E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BB5899C6622B5C1BBCE7C478138F7B;
+			remoteInfo = Reachability;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -276,8 +276,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				948FFDB7B4AD2B4C0D012AEB29C068BF /* PBXTargetDependency */,
-				A1F799BCE8515B64C285483D342DC4A7 /* PBXTargetDependency */,
+				F3ACD1FB48C32F746B8669B1A4FDEFEC /* PBXTargetDependency */,
+				BCC96D44C98F5657FCD8CE2844D5168E /* PBXTargetDependency */,
 			);
 			name = "Pods-ExtensionsFramework";
 			productName = "Pods-ExtensionsFramework";
@@ -376,17 +376,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		948FFDB7B4AD2B4C0D012AEB29C068BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Reachability;
-			target = E6BB5899C6622B5C1BBCE7C478138F7B /* Reachability */;
-			targetProxy = 521B35B00EA234FC504634E8A0C8AF37 /* PBXContainerItemProxy */;
-		};
-		A1F799BCE8515B64C285483D342DC4A7 /* PBXTargetDependency */ = {
+		BCC96D44C98F5657FCD8CE2844D5168E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = iCarousel;
 			target = 3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */;
-			targetProxy = F1BA07E5C15174229C6EC07BAC325D8B /* PBXContainerItemProxy */;
+			targetProxy = 3885D2C2A77B2BB3E85D7217BF27BE29 /* PBXContainerItemProxy */;
+		};
+		F3ACD1FB48C32F746B8669B1A4FDEFEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = E6BB5899C6622B5C1BBCE7C478138F7B /* Reachability */;
+			targetProxy = 8FC7940477E775EECD18EFBEB4AD17E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
