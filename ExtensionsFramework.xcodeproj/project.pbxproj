@@ -30,9 +30,6 @@
 		A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A514213F1C182A4200796FE9 /* icon-forward@2x.png */; };
 		A514214A1C182B9500796FE9 /* NSFileManager+DirectoryLocations.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */; };
 		A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */; };
-		A58BC6AB1C18729200F15440 /* TestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A58BC6A81C18729200F15440 /* TestViewController.h */; };
-		A58BC6AC1C18729200F15440 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A58BC6A91C18729200F15440 /* TestViewController.m */; };
-		A58BC6AD1C18729200F15440 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58BC6AA1C18729200F15440 /* TestViewController.xib */; };
 		A5A9C80C1C11D8E600289DE3 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */; };
 		A5A9C8101C11DC2900289DE3 /* NSArray+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80E1C11DC2900289DE3 /* NSArray+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,9 +100,6 @@
 		A514213F1C182A4200796FE9 /* icon-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-forward@2x.png"; sourceTree = "<group>"; };
 		A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
-		A58BC6A81C18729200F15440 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		A58BC6A91C18729200F15440 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		A58BC6AA1C18729200F15440 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		A5A9C80E1C11DC2900289DE3 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
@@ -201,9 +195,6 @@
 				A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */,
 				A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */,
 				A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */,
-				A58BC6A81C18729200F15440 /* TestViewController.h */,
-				A58BC6A91C18729200F15440 /* TestViewController.m */,
-				A58BC6AA1C18729200F15440 /* TestViewController.xib */,
 			);
 			name = Controllers;
 			path = ExtensionsFramework/Controllers;
@@ -386,7 +377,6 @@
 				A5A9C8241C11DE7C00289DE3 /* NSDictionary+Extensions.h in Headers */,
 				A51421251C182A2500796FE9 /* WeekPickerItem.h in Headers */,
 				A51421321C182A3400796FE9 /* ApplicationHelper.h in Headers */,
-				A58BC6AB1C18729200F15440 /* TestViewController.h in Headers */,
 				A514212C1C182A2C00796FE9 /* PPWebBrowserViewController.h in Headers */,
 				A51421231C182A2500796FE9 /* WeekPicker.h in Headers */,
 				A5A9C82E1C11DF4700289DE3 /* NSManagedObject+Extensions.h in Headers */,
@@ -501,7 +491,6 @@
 				A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */,
 				A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */,
 				A51421271C182A2500796FE9 /* WeekPickerItem.xib in Resources */,
-				A58BC6AD1C18729200F15440 /* TestViewController.xib in Resources */,
 				A51421221C182A2500796FE9 /* NumberPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +601,6 @@
 				A5A9C81D1C11DDE500289DE3 /* NSNumber+Extensions.m in Sources */,
 				A5A9C82D1C11DF4700289DE3 /* NSFetchRequest+Extensions.m in Sources */,
 				A514213C1C182A3B00796FE9 /* ReachabilityManager.m in Sources */,
-				A58BC6AC1C18729200F15440 /* TestViewController.m in Sources */,
 				A5A9C8411C11DF8000289DE3 /* UIImage+Extensions.m in Sources */,
 				A51421261C182A2500796FE9 /* WeekPickerItem.m in Sources */,
 				A5A9C8111C11DC2900289DE3 /* NSArray+Extensions.m in Sources */,
