@@ -32,7 +32,7 @@ s.dependency 'iCarousel',    '~> 1.7'
 s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'
 
 # 9
-# s.resources
+s.resources    = 'ExtensionsFramework/**/*.{png,xib,xcassets}'
 
 
 end
