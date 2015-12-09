@@ -7,6 +7,7 @@
 //
 
 #import "ApplicationHelper.h"
+#import "Reachability.h"
 
 @implementation ApplicationHelper
 

@@ -7,6 +7,11 @@
 //
 
 #import "WeekPicker.h"
+#import "iCarousel.h"
+
+@interface WeekPicker() <iCarouselDataSource, iCarouselDelegate>
+
+@end
 
 @implementation WeekPicker
 

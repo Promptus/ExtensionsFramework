@@ -7,6 +7,7 @@
 //
 
 #import "ReachabilityManager.h"
+#import "Reachability.h"
 
 @implementation ReachabilityManager
 

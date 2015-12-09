@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Reachability.h"
+
+@class Reachability;
 
 @interface ReachabilityManager : NSObject
 

@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "iCarousel.h"
+//#import "iCarousel.h"
 #import "WeekPickerItem.h"
 #import "NSNumber+Extensions.h"
 #import "NSDate+Extensions.h"
 
-@interface WeekPicker : UIControl <iCarouselDataSource, iCarouselDelegate> {
+@class iCarousel;
+
+@interface WeekPicker : UIControl {
   iCarousel * carousel;
   WeekPickerItem * currentWeekPickerItem;
   NSMutableArray * weeks;
