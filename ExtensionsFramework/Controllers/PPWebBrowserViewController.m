@@ -32,7 +32,7 @@
 }
 
 - (id)initWebViewControllerWithURLString:(NSString *)_urlString {
-  if (self = [super initWithNibName:@"PPWebBrowserViewController" bundle:[NSBundle mainBundle]]) {
+  if (self = [super initWithNibName:@"PPWebBrowserViewController" bundle:nil]) {
     _urlString = [_urlString ce_urlStringUsingEncoding:NSUTF8StringEncoding];
     if ([_urlString hasPrefix:@"http://"] || [_urlString hasPrefix:@"https://"]) {
       self.urlString = _urlString;
