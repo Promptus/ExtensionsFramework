@@ -89,7 +89,7 @@
 		A514211F1C182A2500796FE9 /* WeekPickerItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekPickerItem.xib; sourceTree = "<group>"; };
 		A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWebBrowserViewController.h; sourceTree = "<group>"; };
 		A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWebBrowserViewController.m; sourceTree = "<group>"; };
-		A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPWebBrowserViewController.xib; sourceTree = "<group>"; };
+		A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PPWebBrowserViewController.xib; path = /Users/razvanb/ExtensionsFramework/ExtensionsFramework/Controllers/PPWebBrowserViewController.xib; sourceTree = "<absolute>"; };
 		A51421301C182A3400796FE9 /* ApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationHelper.h; sourceTree = "<group>"; };
 		A51421311C182A3400796FE9 /* ApplicationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationHelper.m; sourceTree = "<group>"; };
 		A51421351C182A3B00796FE9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
