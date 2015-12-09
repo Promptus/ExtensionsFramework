@@ -28,7 +28,6 @@
 		A514213C1C182A3B00796FE9 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421381C182A3B00796FE9 /* ReachabilityManager.m */; };
 		A51421401C182A4200796FE9 /* icon-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A514213E1C182A4200796FE9 /* icon-back@2x.png */; };
 		A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A514213F1C182A4200796FE9 /* icon-forward@2x.png */; };
-		A51421471C182AE200796FE9 /* ExtensionsFramework.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51421461C182AE200796FE9 /* ExtensionsFramework.xcassets */; };
 		A514214A1C182B9500796FE9 /* NSFileManager+DirectoryLocations.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */; };
 		A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */; };
 		A5A9C80C1C11D8E600289DE3 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -99,7 +98,6 @@
 		A51421381C182A3B00796FE9 /* ReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityManager.m; sourceTree = "<group>"; };
 		A514213E1C182A4200796FE9 /* icon-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-back@2x.png"; sourceTree = "<group>"; };
 		A514213F1C182A4200796FE9 /* icon-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-forward@2x.png"; sourceTree = "<group>"; };
-		A51421461C182AE200796FE9 /* ExtensionsFramework.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionsFramework.xcassets; sourceTree = "<group>"; };
 		A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
 		A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
@@ -309,7 +307,6 @@
 				E5AA7D301BEB864E00B8EFA7 /* Products */,
 				70E481362F7F2E0968C620A4 /* Pods */,
 				C6CB03551B0140B5618E8F3B /* Frameworks */,
-				A51421461C182AE200796FE9 /* ExtensionsFramework.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -490,7 +487,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51421471C182AE200796FE9 /* ExtensionsFramework.xcassets in Resources */,
 				A51421401C182A4200796FE9 /* icon-back@2x.png in Resources */,
 				A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */,
 				A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */,
