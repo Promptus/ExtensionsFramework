@@ -12,8 +12,8 @@ s.version      = "0.0.1"
 
 # 3
 #if there is a license file available 
-#s.license     = { :type => "MIT", :file => "LICENSE"} 
-s.license      = 'MIT'
+s.license     = { :type => "MIT", :file => "LICENSE"} 
+#s.license      = 'MIT'
 
 # 4
 s.author       = { "Razvan Benga" => "razvanb@fortech.ro" }
@@ -22,7 +22,7 @@ s.author       = { "Razvan Benga" => "razvanb@fortech.ro" }
 s.homepage     = "https://github.com/Promptus/ExtensionsFramework.git"
 
 # 6
-s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git" }
+s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git", :tag => "#{s.version}"}
 
 # 7
 s.dependency 'Reachability', '~> 3.1.1'
