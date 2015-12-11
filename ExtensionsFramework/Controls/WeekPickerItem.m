@@ -16,7 +16,8 @@
 @synthesize date;
 
 + (WeekPickerItem*)loadFromNib:(id)owner {
-  WeekPickerItem* item = [[NSBundle mainBundle] loadNibNamed:@"WeekPickerItem" owner:owner options:nil][0];
+  NSBundle *resourceBundle = [NSBundle bundleForClass:[self class]];
+  WeekPickerItem* item = [resourceBundle loadNibNamed:@"WeekPickerItem" owner:owner options:nil][0];
   item.selected = NO;
   return item;
 }

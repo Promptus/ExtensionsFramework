@@ -22,7 +22,8 @@
 - (id)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
   if (self) {
-    self = [[NSBundle mainBundle] loadNibNamed:@"NumberPad" owner:self options:NULL][0];
+    NSBundle *resourceBundle = [NSBundle bundleForClass:[self class]];
+    self = [resourceBundle loadNibNamed:@"NumberPad" owner:self options:NULL][0];
     self.frame = frame;
     
   }
