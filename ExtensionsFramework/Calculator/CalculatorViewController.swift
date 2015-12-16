@@ -1,9 +1,9 @@
 //
 //  CalculatorViewController.swift
-//  kemmler
+//  ExtensionsFramework
 //
-//  Created by Razvan Benga on 2/13/15.
-//  Copyright (c) 2015 Promptus. All rights reserved.
+//  Created by Razvan Benga on 12/16/15.
+//  Copyright © 2015 Razvan Benga. All rights reserved.
 //
 
 import UIKit
@@ -29,11 +29,11 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
         }
         userInTheMiddleOfTypingNumber = true
     }
-
+    
     @IBAction func changeSignAction() {
         displayValue = -displayValue;
         if displayValue != 0 {
-           userInTheMiddleOfTypingNumber = true
+            userInTheMiddleOfTypingNumber = true
         }
     }
     
@@ -67,7 +67,7 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
     
     @IBAction func operate(sender: UIButton) {
         if userInTheMiddleOfTypingNumber == true || displayLabel.text == "0" {
-           appendDigit()
+            appendDigit()
         }
         if let operation = sender.currentTitle {
             if let result = calculatorOperations.performOperation(operation) {
@@ -77,7 +77,7 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
                 } else {
                     calculatorOperations.clearStack()
                 }
-            } 
+            }
         }
     }
     
@@ -127,7 +127,7 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
                 
                 let array = tempDisplayString.componentsSeparatedByString(",")
                 var tempDisplayText = "0" as String
-    
+                
                 if let string = array.last {
                     if string != "0" {
                         tempDisplayText = String(format: "%.\(string.utf16.count)f", newValue)
@@ -149,7 +149,7 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
     //MARK - DisplayTemporaryValueDelegate method(used to show a temporary result value while doing multiple operations from the stack)
     func displayTemporaryValue(value: Double?) {
         if let val = value {
-           displayValue = val
+            displayValue = val
         }
     }
     
@@ -171,10 +171,10 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
 //        tracker.send(build as [NSObject : AnyObject])
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

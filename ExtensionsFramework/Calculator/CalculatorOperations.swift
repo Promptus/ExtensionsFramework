@@ -1,9 +1,9 @@
 //
 //  CalculatorOperations.swift
-//  kemmler
+//  ExtensionsFramework
 //
-//  Created by Razvan Benga on 2/16/15.
-//  Copyright (c) 2015 Promptus. All rights reserved.
+//  Created by Razvan Benga on 12/16/15.
+//  Copyright © 2015 Razvan Benga. All rights reserved.
 //
 
 import Foundation
@@ -101,3 +101,4 @@ class CalculatorOperations
         return nil
     }
 }
+

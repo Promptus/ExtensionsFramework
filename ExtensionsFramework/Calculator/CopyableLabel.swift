@@ -1,9 +1,9 @@
 //
 //  CopyableLabel.swift
-//  kemmler
+//  ExtensionsFramework
 //
-//  Created by Razvan Benga on 2/18/15.
-//  Copyright (c) 2015 Promptus. All rights reserved.
+//  Created by Razvan Benga on 12/16/15.
+//  Copyright © 2015 Razvan Benga. All rights reserved.
 //
 
 import UIKit
@@ -35,7 +35,7 @@ class CopyableLabel: UILabel {
         }
         return false
     }
-
+    
     override func copy(sender: AnyObject?) {
         let board = UIPasteboard.generalPasteboard()
         board.string = self.text
@@ -70,5 +70,6 @@ class CopyableLabel: UILabel {
             menu.setMenuVisible(true, animated: true)
         }
     }
-
+    
 }
+

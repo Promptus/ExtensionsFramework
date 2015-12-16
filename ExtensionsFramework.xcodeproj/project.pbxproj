@@ -30,6 +30,10 @@
 		A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A514213F1C182A4200796FE9 /* icon-forward@2x.png */; };
 		A514214A1C182B9500796FE9 /* NSFileManager+DirectoryLocations.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */; };
 		A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */; };
+		A5794BD51C2180D000E1E172 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5794BD31C2180D000E1E172 /* CalculatorViewController.swift */; };
+		A5794BD61C2180D000E1E172 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5794BD41C2180D000E1E172 /* CalculatorViewController.xib */; };
+		A5794BD81C21816200E1E172 /* CalculatorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5794BD71C21816200E1E172 /* CalculatorOperations.swift */; };
+		A5794BDA1C21818600E1E172 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5794BD91C21818600E1E172 /* CopyableLabel.swift */; };
 		A5A9C80C1C11D8E600289DE3 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */; };
 		A5A9C8101C11DC2900289DE3 /* NSArray+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C80E1C11DC2900289DE3 /* NSArray+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,10 +64,6 @@
 		A5A9C8431C11DF8000289DE3 /* UIStoryboard+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C8391C11DF8000289DE3 /* UIStoryboard+Extensions.m */; };
 		A5A9C8441C11DF8000289DE3 /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C83A1C11DF8000289DE3 /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A9C8451C11DF8000289DE3 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C83B1C11DF8000289DE3 /* UIView+Extensions.m */; };
-		A5AD51DA1C21538D00361823 /* CalculatorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD51D61C21538D00361823 /* CalculatorOperations.swift */; };
-		A5AD51DB1C21538D00361823 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD51D71C21538D00361823 /* CalculatorViewController.swift */; };
-		A5AD51DC1C21538D00361823 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AD51D81C21538D00361823 /* CalculatorViewController.xib */; };
-		A5AD51DD1C21538D00361823 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD51D91C21538D00361823 /* CopyableLabel.swift */; };
 		ABF31C6EB6AD507DDA45E1B1 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
 		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +104,10 @@
 		A514213F1C182A4200796FE9 /* icon-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-forward@2x.png"; sourceTree = "<group>"; };
 		A51421481C182B9500796FE9 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		A51421491C182B9500796FE9 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		A5794BD31C2180D000E1E172 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		A5794BD41C2180D000E1E172 /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		A5794BD71C21816200E1E172 /* CalculatorOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorOperations.swift; sourceTree = "<group>"; };
+		A5794BD91C21818600E1E172 /* CopyableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
 		A5A9C80A1C11D8E600289DE3 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		A5A9C80B1C11D8E600289DE3 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		A5A9C80E1C11DC2900289DE3 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
@@ -134,10 +138,6 @@
 		A5A9C8391C11DF8000289DE3 /* UIStoryboard+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Extensions.m"; sourceTree = "<group>"; };
 		A5A9C83A1C11DF8000289DE3 /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
 		A5A9C83B1C11DF8000289DE3 /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
-		A5AD51D61C21538D00361823 /* CalculatorOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorOperations.swift; sourceTree = "<group>"; };
-		A5AD51D71C21538D00361823 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		A5AD51D81C21538D00361823 /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
-		A5AD51D91C21538D00361823 /* CopyableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
 		DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E58534A41BFCC7E400825144 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionsFramework.h; sourceTree = "<group>"; };
@@ -296,10 +296,10 @@
 		A5AD51D51C21538D00361823 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				A5AD51D61C21538D00361823 /* CalculatorOperations.swift */,
-				A5AD51D71C21538D00361823 /* CalculatorViewController.swift */,
-				A5AD51D81C21538D00361823 /* CalculatorViewController.xib */,
-				A5AD51D91C21538D00361823 /* CopyableLabel.swift */,
+				A5794BD71C21816200E1E172 /* CalculatorOperations.swift */,
+				A5794BD31C2180D000E1E172 /* CalculatorViewController.swift */,
+				A5794BD41C2180D000E1E172 /* CalculatorViewController.xib */,
+				A5794BD91C21818600E1E172 /* CopyableLabel.swift */,
 			);
 			name = Calculator;
 			path = ExtensionsFramework/Calculator;
@@ -512,7 +512,7 @@
 				A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */,
 				A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */,
 				A51421271C182A2500796FE9 /* WeekPickerItem.xib in Resources */,
-				A5AD51DC1C21538D00361823 /* CalculatorViewController.xib in Resources */,
+				A5794BD61C2180D000E1E172 /* CalculatorViewController.xib in Resources */,
 				A51421221C182A2500796FE9 /* NumberPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,9 +618,8 @@
 				A5A9C8191C11DDA600289DE3 /* NSDecimalNumber+Extensions.m in Sources */,
 				E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */,
 				A514212D1C182A2C00796FE9 /* PPWebBrowserViewController.m in Sources */,
+				A5794BD51C2180D000E1E172 /* CalculatorViewController.swift in Sources */,
 				A51421211C182A2500796FE9 /* NumberPad.m in Sources */,
-				A5AD51DB1C21538D00361823 /* CalculatorViewController.swift in Sources */,
-				A5AD51DD1C21538D00361823 /* CopyableLabel.swift in Sources */,
 				A5A9C8311C11DF4700289DE3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				A5A9C81D1C11DDE500289DE3 /* NSNumber+Extensions.m in Sources */,
 				A5A9C82D1C11DF4700289DE3 /* NSFetchRequest+Extensions.m in Sources */,
@@ -628,14 +627,15 @@
 				A5A9C8411C11DF8000289DE3 /* UIImage+Extensions.m in Sources */,
 				A51421261C182A2500796FE9 /* WeekPickerItem.m in Sources */,
 				A5A9C8111C11DC2900289DE3 /* NSArray+Extensions.m in Sources */,
-				A5AD51DA1C21538D00361823 /* CalculatorOperations.swift in Sources */,
 				A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */,
 				A514213A1C182A3B00796FE9 /* CoreDataManager.m in Sources */,
+				A5794BDA1C21818600E1E172 /* CopyableLabel.swift in Sources */,
 				A5A9C82F1C11DF4700289DE3 /* NSManagedObject+Extensions.m in Sources */,
 				A5A9C8431C11DF8000289DE3 /* UIStoryboard+Extensions.m in Sources */,
 				A51421331C182A3400796FE9 /* ApplicationHelper.m in Sources */,
 				A5A9C8251C11DE7C00289DE3 /* NSDictionary+Extensions.m in Sources */,
 				A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */,
+				A5794BD81C21816200E1E172 /* CalculatorOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +680,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -699,6 +700,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = ExtensionsFramework;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -729,6 +731,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -741,6 +744,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = ExtensionsFramework;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
