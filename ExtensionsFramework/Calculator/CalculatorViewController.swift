@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
+public class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
     
     @IBOutlet weak var displayLabel: CopyableLabel!
     
@@ -153,14 +153,14 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
         }
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         displayLabel.editDelegate = self
         calculatorOperations.delegate = self
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         //Google Analytics tracker
@@ -172,7 +172,7 @@ class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTe
     }
     
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
