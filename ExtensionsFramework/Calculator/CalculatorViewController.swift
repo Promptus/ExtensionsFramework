@@ -155,18 +155,18 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         }
     }
     
-    public init(withThemeColor: UIColor) {
-        let bundle = NSBundle(forClass: CalculatorViewController.self)
-        super.init(nibName: "CalculatorViewController", bundle: bundle)
-        
-        for button in self.rightSideButtons {
-            button.backgroundColor = withThemeColor
-        }
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+//    public init(withThemeColor: UIColor) {
+//        let bundle = NSBundle(forClass: CalculatorViewController.self)
+//        super.init(nibName: "CalculatorViewController", bundle: bundle)
+//        
+//        for button in self.rightSideButtons {
+//            button.backgroundColor = withThemeColor
+//        }
+//    }
+//    
+//    required public init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
