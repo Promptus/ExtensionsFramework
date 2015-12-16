@@ -156,11 +156,12 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     }
     
     public init(withThemeColor: UIColor) {
+        let bundle = NSBundle(forClass: CalculatorViewController.self)
+        super.init(nibName: "CalculatorViewController", bundle: bundle)
+        
         for button in self.rightSideButtons {
             button.backgroundColor = withThemeColor
         }
-        let bundle = NSBundle(forClass: CalculatorViewController.self)
-        super.init(nibName: "CalculatorViewController", bundle: bundle)
     }
     
     required public init?(coder aDecoder: NSCoder) {
