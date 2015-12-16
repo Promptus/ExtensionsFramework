@@ -11,6 +11,8 @@ import Foundation
 
 public class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
     
+    @IBOutlet var rightSideButtons: [UIButton]!
+    
     @IBOutlet weak var displayLabel: CopyableLabel!
     
     @IBOutlet weak var clearButton: UIButton!
@@ -151,6 +153,18 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         if let val = value {
             displayValue = val
         }
+    }
+    
+    public init(withThemeColor: UIColor) {
+        for button in self.rightSideButtons {
+            button.backgroundColor = withThemeColor
+        }
+        let bundle = NSBundle(forClass: CalculatorViewController.self)
+        super.init(nibName: "CalculatorViewController", bundle: bundle)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     override public func viewDidLoad() {

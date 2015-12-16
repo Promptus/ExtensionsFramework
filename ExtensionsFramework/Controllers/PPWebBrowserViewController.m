@@ -8,6 +8,7 @@
 
 #import "PPWebBrowserViewController.h"
 #import "NSString+Extensions.h"
+#import <ExtensionsFramework/ExtensionsFramework-Swift.h>
 
 @interface PPWebBrowserViewController ()
 

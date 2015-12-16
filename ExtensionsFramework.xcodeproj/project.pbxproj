@@ -19,7 +19,6 @@
 		A51421271C182A2500796FE9 /* WeekPickerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = A514211F1C182A2500796FE9 /* WeekPickerItem.xib */; };
 		A514212C1C182A2C00796FE9 /* PPWebBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A514212D1C182A2C00796FE9 /* PPWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */; };
-		A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */; };
 		A51421321C182A3400796FE9 /* ApplicationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421301C182A3400796FE9 /* ApplicationHelper.h */; };
 		A51421331C182A3400796FE9 /* ApplicationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421311C182A3400796FE9 /* ApplicationHelper.m */; };
 		A51421391C182A3B00796FE9 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421351C182A3B00796FE9 /* CoreDataManager.h */; };
@@ -69,6 +68,7 @@
 		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; };
 		E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */; };
+		E5FC9E241C21AF0D00B90815 /* PPWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FC9E231C21AF0D00B90815 /* PPWebBrowserViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,6 @@
 		A514211F1C182A2500796FE9 /* WeekPickerItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekPickerItem.xib; sourceTree = "<group>"; };
 		A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWebBrowserViewController.h; sourceTree = "<group>"; };
 		A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWebBrowserViewController.m; sourceTree = "<group>"; };
-		A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PPWebBrowserViewController.xib; path = /Users/razvanb/ExtensionsFramework/ExtensionsFramework/Controllers/PPWebBrowserViewController.xib; sourceTree = "<absolute>"; };
 		A51421301C182A3400796FE9 /* ApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationHelper.h; sourceTree = "<group>"; };
 		A51421311C182A3400796FE9 /* ApplicationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationHelper.m; sourceTree = "<group>"; };
 		A51421351C182A3B00796FE9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFrameworkTests.swift; sourceTree = "<group>"; };
 		E5AA7D401BEB864E00B8EFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E06C641BEC9ADA00C92020 /* ExtensionsFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExtensionsFramework.podspec; sourceTree = SOURCE_ROOT; };
+		E5FC9E231C21AF0D00B90815 /* PPWebBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPWebBrowserViewController.xib; sourceTree = "<group>"; };
 		F80AD0F7F000FFE5D5B0B556 /* Pods_ExtensionsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtensionsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,7 @@
 			children = (
 				A51421291C182A2C00796FE9 /* PPWebBrowserViewController.h */,
 				A514212A1C182A2C00796FE9 /* PPWebBrowserViewController.m */,
-				A514212B1C182A2C00796FE9 /* PPWebBrowserViewController.xib */,
+				E5FC9E231C21AF0D00B90815 /* PPWebBrowserViewController.xib */,
 			);
 			name = Controllers;
 			path = ExtensionsFramework/Controllers;
@@ -510,10 +510,10 @@
 			files = (
 				A51421401C182A4200796FE9 /* icon-back@2x.png in Resources */,
 				A51421411C182A4200796FE9 /* icon-forward@2x.png in Resources */,
-				A514212E1C182A2C00796FE9 /* PPWebBrowserViewController.xib in Resources */,
 				A51421271C182A2500796FE9 /* WeekPickerItem.xib in Resources */,
 				A5794BD61C2180D000E1E172 /* CalculatorViewController.xib in Resources */,
 				A51421221C182A2500796FE9 /* NumberPad.xib in Resources */,
+				E5FC9E241C21AF0D00B90815 /* PPWebBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
