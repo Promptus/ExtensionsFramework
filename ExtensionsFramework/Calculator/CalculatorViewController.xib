@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="clearButton" destination="3QK-wc-kti" id="K9I-zM-Bu5"/>
                 <outlet property="displayLabel" destination="pr6-Ey-v6J" id="9Tj-Z9-56C"/>
+                <outlet property="view" destination="xPM-Sz-k9C" id="gYe-Vf-UW2"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
