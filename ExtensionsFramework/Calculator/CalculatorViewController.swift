@@ -11,15 +11,21 @@ import Foundation
 
 public class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
     
-    @IBOutlet var rightSideButtons: [UIButton]!
+    @IBOutlet var rightSideButtons: [UIButton]! {
+        didSet {
+            for button in rightSideButtons {
+                button.backgroundColor = themeColor
+            }
+        }
+    }
     
     @IBOutlet weak var displayLabel: CopyableLabel!
     
     @IBOutlet weak var clearButton: UIButton!
     
     var userInTheMiddleOfTypingNumber = false
-    
     var calculatorOperations = CalculatorOperations()
+    private var themeColor = UIColor.greenColor()
     
     @IBAction func enter() {
         appendDigit()
@@ -155,18 +161,15 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         }
     }
     
-//    public init(withThemeColor: UIColor) {
-//        let bundle = NSBundle(forClass: CalculatorViewController.self)
-//        super.init(nibName: "CalculatorViewController", bundle: bundle)
-//        
-//        for button in self.rightSideButtons {
-//            button.backgroundColor = withThemeColor
-//        }
-//    }
-//    
-//    required public init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
+    public init(withThemeColor: UIColor) {
+        themeColor = withThemeColor
+        let bundle = NSBundle(forClass: CalculatorViewController.self)
+        super.init(nibName: "CalculatorViewController", bundle: bundle)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
