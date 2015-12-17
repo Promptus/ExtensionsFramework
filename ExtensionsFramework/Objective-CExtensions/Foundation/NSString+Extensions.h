@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (Extensions)
 
@@ -27,7 +28,8 @@
 - (NSString *)ce_removeAllWhiteSpaces;
 - (NSString *)ce_truncateEmptyStringComponentsSeparatedByCharacter:(NSString *)stringSeparator;
 
-- (NSNumber *)numberFromLocalizedString;
-- (NSDecimalNumber *)decimalNumberFromString;
+- (NSNumber *)ce_numberFromLocalizedString;
+- (NSDecimalNumber *)ce_decimalNumberFromString;
+- (CGFloat)ce_stringFontSizeInsideSuperviewMargins:(CGSize)margins withInitialFontSize:(CGFloat)initialFontSize;
 
 @end

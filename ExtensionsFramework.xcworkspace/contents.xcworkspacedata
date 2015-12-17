@@ -5,9 +5,6 @@
       location = "group:ExtensionsFramework.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ExtensionsFramework/ExtensionsFramework.xcassets">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

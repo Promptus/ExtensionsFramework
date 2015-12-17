@@ -7,28 +7,32 @@
 		<key>Pods-ExtensionsFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<false/>
+		</dict>
+		<key>Pods-ExtensionsFrameworkTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<false/>
 		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>12974C781BE8F01A7E30933E511DAAE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1398156583281EBCBCE56DCB5544CE09</key>
 		<dict>
 			<key>primary</key>
 			<true/>

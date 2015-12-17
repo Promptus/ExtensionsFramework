@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Extensions.h"
+#import "UIFont+TilePadFonts.h"
 
 static NSNumberFormatter *floatFormatter;
 
@@ -92,7 +93,7 @@ static NSNumberFormatter *floatFormatter;
     return [finalStringComponents componentsJoinedByString:stringSeparator];
 }
 
-- (NSNumber *)numberFromLocalizedString {
+- (NSNumber *)ce_numberFromLocalizedString {
     if (!floatFormatter) {
         floatFormatter = [[NSNumberFormatter alloc] init];
         [floatFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -103,9 +104,23 @@ static NSNumberFormatter *floatFormatter;
     return [floatFormatter numberFromString:self];
 }
 
-- (NSDecimalNumber *)decimalNumberFromString {
-    return [NSDecimalNumber decimalNumberWithDecimal:[self numberFromLocalizedString].decimalValue];
+- (NSDecimalNumber *)ce_decimalNumberFromString {
+    return [NSDecimalNumber decimalNumberWithDecimal:[self ce_numberFromLocalizedString].decimalValue];
 }
 
+- (CGFloat)ce_stringFontSizeInsideSuperviewMargins:(CGSize)margins withInitialFontSize:(CGFloat)initialFontSize {
+    CGSize frameSize = margins;
+    BOOL isContained = NO;
+    do {
+        CGSize neededSize = [self sizeWithAttributes:@{NSFontAttributeName : [UIFont systemFontWithSize:initialFontSize andType:Light]}];
+        if (neededSize.width > frameSize.width || neededSize.height > frameSize.height) {
+            initialFontSize--;
+        } else {
+            isContained = YES;
+        }
+    } while (!isContained);
+    
+    return initialFontSize;
+}
 
 @end

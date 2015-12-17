@@ -83,4 +83,10 @@
   return [self.reachability isReachableViaWiFi];
 }
 
+#pragma mark Generic helper methods
+
++ (BOOL)isOSAtLeastVersion:(NSOperatingSystemVersion)systemVersion {
+    return [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:systemVersion];
+}
+
 @end

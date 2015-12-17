@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import ExtensionsFramework
 
 class ExtensionsFrameworkTests: XCTestCase {
     
