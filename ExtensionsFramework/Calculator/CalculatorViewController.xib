@@ -10,7 +10,11 @@
                 <outlet property="clearButton" destination="3QK-wc-kti" id="K9I-zM-Bu5"/>
                 <outlet property="displayLabel" destination="pr6-Ey-v6J" id="9Tj-Z9-56C"/>
                 <outlet property="view" destination="xPM-Sz-k9C" id="gYe-Vf-UW2"/>
-                <outletCollection property="rightSideButtons" destination="bwO-Xy-zWn" id="0lV-UB-8hs"/>
+                <outletCollection property="rightSideButtons" destination="bwO-Xy-zWn" collectionClass="NSMutableArray" id="0lV-UB-8hs"/>
+                <outletCollection property="rightSideButtons" destination="iZA-9U-qoi" collectionClass="NSMutableArray" id="nyY-n5-sAJ"/>
+                <outletCollection property="rightSideButtons" destination="ddm-GV-jmQ" collectionClass="NSMutableArray" id="n7Q-we-xzN"/>
+                <outletCollection property="rightSideButtons" destination="8nz-Tm-uzx" collectionClass="NSMutableArray" id="cBA-0c-zxY"/>
+                <outletCollection property="rightSideButtons" destination="BYn-7D-7Rn" collectionClass="NSMutableArray" id="GdR-hl-urY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
