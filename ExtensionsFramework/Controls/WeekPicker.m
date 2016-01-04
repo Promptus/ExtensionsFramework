@@ -136,7 +136,7 @@
 #pragma mark iCarouselDelegate
 
 
-- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view {
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view {
   if (view == nil) {
     view = [WeekPickerItem loadFromNib:self];
     view.frame = CGRectMake(0, 0, self.frame.size.width/self.numberOfVisibleItems, self.frame.size.height);
@@ -163,7 +163,7 @@
 
 #pragma mark iCarouselDataSource
 
-- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
+- (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
   return weeks.count;
 }
 

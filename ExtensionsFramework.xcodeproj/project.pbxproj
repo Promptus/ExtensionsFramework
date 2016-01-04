@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		285E13DF0DB954E146E5E389 /* Pods_ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AD0F7F000FFE5D5B0B556 /* Pods_ExtensionsFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		9FA25A521F13DBD064CCEB68 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F650AAEAA5FA0D47228CD8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		285E13DF0DB954E146E5E389 /* Pods_ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AD0F7F000FFE5D5B0B556 /* Pods_ExtensionsFramework.framework */; };
 		A51421201C182A2500796FE9 /* NumberPad.h in Headers */ = {isa = PBXBuildFile; fileRef = A51421181C182A2500796FE9 /* NumberPad.h */; };
 		A51421211C182A2500796FE9 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A51421191C182A2500796FE9 /* NumberPad.m */; };
 		A51421221C182A2500796FE9 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A514211A1C182A2500796FE9 /* NumberPad.xib */; };
@@ -75,13 +74,12 @@
 		A5F8D6E41C22F56C00EEFB33 /* UIFont+TilePadFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E21C22F56C00EEFB33 /* UIFont+TilePadFonts.m */; };
 		A5F8D6E71C22F7A800EEFB33 /* NSObject+AssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F8D6E51C22F7A800EEFB33 /* NSObject+AssociatedObjects.h */; };
 		A5F8D6E81C22F7A800EEFB33 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */; };
-		D3161267834D09491646932A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F650AAEAA5FA0D47228CD8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
 		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; };
 		E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */; };
 		E5FC9E241C21AF0D00B90815 /* PPWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FC9E231C21AF0D00B90815 /* PPWebBrowserViewController.xib */; };
-		EBF942C3B0843C4D945390A9 /* Pods_ExtensionsFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DF9D811FC44525AEE28306 /* Pods_ExtensionsFrameworkTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EBF942C3B0843C4D945390A9 /* Pods_ExtensionsFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DF9D811FC44525AEE28306 /* Pods_ExtensionsFrameworkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,11 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1359B26A7A63C11F4DE50F57 /* Pods-ExtensionsFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFrameworkTests/Pods-ExtensionsFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		210366B0B15F425734E536D3 /* Pods-ExtensionsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		23F650AAEAA5FA0D47228CD8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		438F09DF57853D82DCD2C11F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		6A0D781FB6A86B45EA375279 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74DF9D811FC44525AEE28306 /* Pods_ExtensionsFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtensionsFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.release.xcconfig"; sourceTree = "<group>"; };
 		A51421181C182A2500796FE9 /* NumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPad.h; sourceTree = "<group>"; };
 		A51421191C182A2500796FE9 /* NumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPad.m; sourceTree = "<group>"; };
 		A514211A1C182A2500796FE9 /* NumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
@@ -166,7 +163,8 @@
 		A5F8D6E21C22F56C00EEFB33 /* UIFont+TilePadFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TilePadFonts.m"; sourceTree = "<group>"; };
 		A5F8D6E51C22F7A800EEFB33 /* NSObject+AssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObjects.h"; sourceTree = "<group>"; };
 		A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObjects.m"; sourceTree = "<group>"; };
-		DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		A967F1BBF6D35FCAE4D79CE9 /* Pods-ExtensionsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.release.xcconfig"; sourceTree = "<group>"; };
+		B02EFA7258A028DB1C15FAA6 /* Pods-ExtensionsFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFrameworkTests/Pods-ExtensionsFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E58534A41BFCC7E400825144 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionsFramework.h; sourceTree = "<group>"; };
 		E58534A51BFCC7E400825144 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				285E13DF0DB954E146E5E389 /* Pods_ExtensionsFramework.framework in Frameworks */,
-				D3161267834D09491646932A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +192,6 @@
 			files = (
 				A5F8D6D41C22E53C00EEFB33 /* Foundation.framework in Frameworks */,
 				E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */,
-				9FA25A521F13DBD064CCEB68 /* Pods.framework in Frameworks */,
 				EBF942C3B0843C4D945390A9 /* Pods_ExtensionsFrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,10 +202,10 @@
 		70E481362F7F2E0968C620A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */,
-				8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */,
-				438F09DF57853D82DCD2C11F /* Pods.debug.xcconfig */,
-				6A0D781FB6A86B45EA375279 /* Pods.release.xcconfig */,
+				210366B0B15F425734E536D3 /* Pods-ExtensionsFramework.debug.xcconfig */,
+				A967F1BBF6D35FCAE4D79CE9 /* Pods-ExtensionsFramework.release.xcconfig */,
+				1359B26A7A63C11F4DE50F57 /* Pods-ExtensionsFrameworkTests.debug.xcconfig */,
+				B02EFA7258A028DB1C15FAA6 /* Pods-ExtensionsFrameworkTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -821,7 +817,7 @@
 		};
 		E5AA7D441BEB864E00B8EFA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */;
+			baseConfigurationReference = 210366B0B15F425734E536D3 /* Pods-ExtensionsFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -842,7 +838,7 @@
 		};
 		E5AA7D451BEB864E00B8EFA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */;
+			baseConfigurationReference = A967F1BBF6D35FCAE4D79CE9 /* Pods-ExtensionsFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -862,7 +858,7 @@
 		};
 		E5AA7D471BEB864E00B8EFA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCA0DDA24E17377C85364F6C /* Pods-ExtensionsFramework.debug.xcconfig */;
+			baseConfigurationReference = 1359B26A7A63C11F4DE50F57 /* Pods-ExtensionsFrameworkTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExtensionsFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -873,7 +869,7 @@
 		};
 		E5AA7D481BEB864E00B8EFA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B52E24F79AC1BBC58D463F1 /* Pods-ExtensionsFramework.release.xcconfig */;
+			baseConfigurationReference = B02EFA7258A028DB1C15FAA6 /* Pods-ExtensionsFrameworkTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExtensionsFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
