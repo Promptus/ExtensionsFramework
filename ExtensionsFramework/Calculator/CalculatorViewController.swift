@@ -181,6 +181,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        GAManager.trackView("Calculator View")
         //Google Analytics tracker
         //GAIUtils.sendView(TrackedScreensConstants.trackedCalculatorScreen())
         

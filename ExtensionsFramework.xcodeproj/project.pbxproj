@@ -62,6 +62,7 @@
 		A5A9C8431C11DF8000289DE3 /* UIStoryboard+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C8391C11DF8000289DE3 /* UIStoryboard+Extensions.m */; };
 		A5A9C8441C11DF8000289DE3 /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A9C83A1C11DF8000289DE3 /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A9C8451C11DF8000289DE3 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A9C83B1C11DF8000289DE3 /* UIView+Extensions.m */; };
+		A5DDB3D11C3C140B00BEA15F /* GAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDB3D01C3C140B00BEA15F /* GAManager.swift */; };
 		A5F8D6CF1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6CD1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m */; };
 		A5F8D6D01C22E2FE00EEFB33 /* NSStringExtensionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6CE1C22E2FE00EEFB33 /* NSStringExtensionTest.m */; };
 		A5F8D6D21C22E44800EEFB33 /* XCTAssertMacroExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F8D6D11C22E44800EEFB33 /* XCTAssertMacroExtension.h */; };
@@ -151,6 +152,7 @@
 		A5A9C8391C11DF8000289DE3 /* UIStoryboard+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Extensions.m"; sourceTree = "<group>"; };
 		A5A9C83A1C11DF8000289DE3 /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
 		A5A9C83B1C11DF8000289DE3 /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		A5DDB3D01C3C140B00BEA15F /* GAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAManager.swift; sourceTree = "<group>"; };
 		A5F8D6CD1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExtensionsTest.m; sourceTree = "<group>"; };
 		A5F8D6CE1C22E2FE00EEFB33 /* NSStringExtensionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensionTest.m; sourceTree = "<group>"; };
 		A5F8D6D11C22E44800EEFB33 /* XCTAssertMacroExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCTAssertMacroExtension.h; path = ExtensionsFramework/XCTAssertMacroExtension.h; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				A51421361C182A3B00796FE9 /* CoreDataManager.m */,
 				A51421371C182A3B00796FE9 /* ReachabilityManager.h */,
 				A51421381C182A3B00796FE9 /* ReachabilityManager.m */,
+				A5DDB3D01C3C140B00BEA15F /* GAManager.swift */,
 			);
 			name = Managers;
 			path = ExtensionsFramework/Managers;
@@ -678,6 +681,7 @@
 				E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */,
 				A514212D1C182A2C00796FE9 /* PPWebBrowserViewController.m in Sources */,
 				A5794BD51C2180D000E1E172 /* CalculatorViewController.swift in Sources */,
+				A5DDB3D11C3C140B00BEA15F /* GAManager.swift in Sources */,
 				A51421211C182A2500796FE9 /* NumberPad.m in Sources */,
 				A5A9C8311C11DF4700289DE3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				A5A9C81D1C11DDE500289DE3 /* NSNumber+Extensions.m in Sources */,
