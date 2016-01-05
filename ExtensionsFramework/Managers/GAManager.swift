@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GAManager {
+public class GAManager: NSObject {
     
     public init(withTrackingId: String) {
         GAI.sharedInstance().trackerWithTrackingId(withTrackingId)
