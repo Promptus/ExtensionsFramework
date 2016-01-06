@@ -15,4 +15,8 @@ FOUNDATION_EXPORT double ExtensionsFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char ExtensionsFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ExtensionsFramework/PublicHeader.h>
+#if __has_include(<ExtensionsFramework/ExtensionsFramework-BridgingHeader.h>)
+#import <Google/Analytics.h>
+#else
 @import Google;
+#endif
