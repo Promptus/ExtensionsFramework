@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Google
 
 public class GAManager: NSObject {
     

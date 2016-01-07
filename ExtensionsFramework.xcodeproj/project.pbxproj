@@ -76,7 +76,7 @@
 		A5F8D6E71C22F7A800EEFB33 /* NSObject+AssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F8D6E51C22F7A800EEFB33 /* NSObject+AssociatedObjects.h */; };
 		A5F8D6E81C22F7A800EEFB33 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
-		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; };
 		E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */; };
 		E5FC9E241C21AF0D00B90815 /* PPWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FC9E231C21AF0D00B90815 /* PPWebBrowserViewController.xib */; };
