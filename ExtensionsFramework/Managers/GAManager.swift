@@ -10,14 +10,14 @@ import Foundation
 
 public class GAManager: NSObject {
     
-    public init(withTrackingId: String) {
-        GAI.sharedInstance().trackerWithTrackingId(withTrackingId)
-        GAI.sharedInstance().trackUncaughtExceptions = true
-    }
-    
-    public static func trackView(screenName: String) {
-        GAI.sharedInstance().defaultTracker.set(kGAIScreenName, value: screenName)
-        GAI.sharedInstance().defaultTracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
-    }
+//    public init(withTrackingId: String) {
+//        GAI.sharedInstance().trackerWithTrackingId(withTrackingId)
+//        GAI.sharedInstance().trackUncaughtExceptions = true
+//    }
+//    
+//    public static func trackView(screenName: String) {
+//        GAI.sharedInstance().defaultTracker.set(kGAIScreenName, value: screenName)
+//        GAI.sharedInstance().defaultTracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
+//    }
     
 }

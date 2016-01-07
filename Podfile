@@ -5,7 +5,7 @@ target 'ExtensionsFramework' do
 
 pod 'Reachability', '~> 3.1.1'
 pod 'iCarousel',    '~> 1.7'
-pod 'Google/Analytics'
+#pod 'Google/Analytics'
 
 end
 
@@ -13,7 +13,7 @@ target 'ExtensionsFrameworkTests' do
 
 pod 'Reachability', '~> 3.1.1'
 pod 'iCarousel',    '~> 1.7'
-pod 'Google/Analytics'
+#pod 'Google/Analytics'
 
 end
 
