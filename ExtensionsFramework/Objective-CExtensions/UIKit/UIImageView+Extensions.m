@@ -9,6 +9,7 @@
 #import "UIImageView+Extensions.h"
 #import "AdjustableTextLayer.h"
 #import "NSObject+AssociatedObjects.h"
+#import "CALayer+InterspaceBorder.h"
 
 @interface UIImageView ()
 
@@ -49,6 +50,11 @@
     [self.layer addSublayer:squareLayer];
     
 }
+
+- (void)removeBadgeLayer {
+    [self.layer removeInterspaceBorder];
+}
+
 
 - (void)customizeBadgeLayerWithText:(NSString *)text
                     backgroundColor:(UIColor *)backgroundColor
