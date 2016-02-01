@@ -77,6 +77,8 @@
 		A5F8D6E81C22F7A800EEFB33 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */; };
 		E5267E2F1C57939900DE3123 /* CALayer+InterspaceBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */; };
 		E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */; };
+		E56986771C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */; };
+		E56986781C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
 		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; };
@@ -171,6 +173,8 @@
 		B02EFA7258A028DB1C15FAA6 /* Pods-ExtensionsFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFrameworkTests/Pods-ExtensionsFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+InterspaceBorder.h"; sourceTree = "<group>"; };
 		E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+InterspaceBorder.m"; sourceTree = "<group>"; };
+		E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E58534A41BFCC7E400825144 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionsFramework.h; sourceTree = "<group>"; };
 		E58534A51BFCC7E400825144 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -281,6 +285,8 @@
 		A5A9C8071C11D8DC00289DE3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */,
+				E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */,
 				A5A9C8321C11DF8000289DE3 /* UIButton+Extensions.h */,
 				A5A9C8331C11DF8000289DE3 /* UIButton+Extensions.m */,
 				A5A9C8341C11DF8000289DE3 /* UIColor+Extensions.h */,
@@ -476,6 +482,7 @@
 				A5F8D6D21C22E44800EEFB33 /* XCTAssertMacroExtension.h in Headers */,
 				A514214A1C182B9500796FE9 /* NSFileManager+DirectoryLocations.h in Headers */,
 				A5F8D6E31C22F56C00EEFB33 /* UIFont+TilePadFonts.h in Headers */,
+				E56986771C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h in Headers */,
 				E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */,
 				A514213B1C182A3B00796FE9 /* ReachabilityManager.h in Headers */,
 				E5267E2F1C57939900DE3123 /* CALayer+InterspaceBorder.h in Headers */,
@@ -705,6 +712,7 @@
 				A5A9C8431C11DF8000289DE3 /* UIStoryboard+Extensions.m in Sources */,
 				A51421331C182A3400796FE9 /* ApplicationHelper.m in Sources */,
 				A5A9C8251C11DE7C00289DE3 /* NSDictionary+Extensions.m in Sources */,
+				E56986781C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m in Sources */,
 				A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */,
 				E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */,
 				A5794BD81C21816200E1E172 /* CalculatorOperations.swift in Sources */,
