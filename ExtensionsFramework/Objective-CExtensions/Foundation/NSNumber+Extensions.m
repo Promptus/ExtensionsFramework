@@ -61,5 +61,9 @@
     return [formatter stringFromNumber:self];
 }
 
+- (NSDecimalNumber *)ce_buildDecimaValueFromIntegerWithNumberOfDecimals:(NSInteger)numberOfDecimals {
+    float division = (float)(pow(10, numberOfDecimals));
+    return  [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%@", @(self.integerValue / division)]];
+}
 
 @end

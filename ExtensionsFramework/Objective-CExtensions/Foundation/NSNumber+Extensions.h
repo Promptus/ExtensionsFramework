@@ -12,7 +12,8 @@
 
 - (NSString *)ce_formattedEuro;
 - (NSString *)ce_formattedRoundedEuroWithoutDecimals;
-- (NSDecimalNumber*)ce_decimalNumberDividedByFloat:(float)divider;
+- (NSDecimalNumber *)ce_decimalNumberDividedByFloat:(float)divider;
+- (NSDecimalNumber *)ce_buildDecimaValueFromIntegerWithNumberOfDecimals:(NSInteger)numberOfDecimals;
 - (NSInteger)ce_minutes;
 - (NSInteger)ce_hours;
 - (NSInteger)ce_days;
