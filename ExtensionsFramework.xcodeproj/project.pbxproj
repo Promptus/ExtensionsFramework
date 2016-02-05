@@ -77,6 +77,7 @@
 		A5F8D6E81C22F7A800EEFB33 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */; };
 		E5267E2F1C57939900DE3123 /* CALayer+InterspaceBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */; };
 		E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */; };
+		E569801F1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E569801E1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m */; };
 		E56986771C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */; };
 		E56986781C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
@@ -173,6 +174,7 @@
 		B02EFA7258A028DB1C15FAA6 /* Pods-ExtensionsFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFrameworkTests/Pods-ExtensionsFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+InterspaceBorder.h"; sourceTree = "<group>"; };
 		E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+InterspaceBorder.m"; sourceTree = "<group>"; };
+		E569801E1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDecimalNumberExtensionsTest.m; sourceTree = "<group>"; };
 		E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 			children = (
 				A5F8D6CD1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m */,
 				A5F8D6CE1C22E2FE00EEFB33 /* NSStringExtensionTest.m */,
+				E569801E1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				A5F8D6CF1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m in Sources */,
 				A5F8D6D01C22E2FE00EEFB33 /* NSStringExtensionTest.m in Sources */,
 				E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */,
+				E569801F1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

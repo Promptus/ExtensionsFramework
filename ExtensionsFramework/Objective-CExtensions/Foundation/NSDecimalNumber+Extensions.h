@@ -16,5 +16,6 @@
 - (NSDecimalNumber*)ce_decimalNumberWithDiscountPercentage:(NSDecimalNumber *)discountPercentage roundToScale:(NSUInteger)scale;
 - (NSDecimalNumber*)ce_discountPercentageWithBaseValue:(NSDecimalNumber *)baseValue;
 - (NSDecimalNumber*)ce_discountPercentageWithBaseValue:(NSDecimalNumber *)baseValue roundToScale:(NSUInteger)scale;
+- (NSInteger)ce_integerWithNumberOfDecimalValues:(NSInteger)numberOfDecimals;
 
 @end

@@ -42,5 +42,9 @@
     return [discount ce_roundToScale:scale];
 }
 
+- (NSInteger)ce_integerWithNumberOfDecimalValues:(NSInteger)numberOfDecimals {
+    return [self decimalNumberByMultiplyingByPowerOf10: numberOfDecimals].integerValue;
+}
+
 
 @end
