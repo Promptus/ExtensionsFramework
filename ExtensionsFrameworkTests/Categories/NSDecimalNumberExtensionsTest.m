@@ -27,8 +27,8 @@
 }
 
 - (void)testIntegerConversionFromFullValue {
-    NSDecimalNumber *testNumber = [NSDecimalNumber decimalNumberWithString:@"23.45"];
-    NSDecimalNumber *testNumber2 = [NSDecimalNumber decimalNumberWithString:@"0.23"];
+    NSDecimalNumber *testNumber = [NSDecimalNumber decimalNumberWithString:@"23.450000000323"];
+    NSDecimalNumber *testNumber2 = [NSDecimalNumber decimalNumberWithString:@"0.2354333"];
 
     XCTAssertTrue([testNumber ce_integerWithNumberOfDecimalValues:2] == 2345);
     XCTAssertTrue([testNumber2 ce_integerWithNumberOfDecimalValues:2] == 23);
