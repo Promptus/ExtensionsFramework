@@ -31,5 +31,6 @@
 - (NSNumber *)ce_numberFromLocalizedString;
 - (NSDecimalNumber *)ce_decimalNumberFromString;
 - (CGFloat)ce_stringFontSizeInsideSuperviewMargins:(CGSize)margins withInitialFontSize:(CGFloat)initialFontSize;
+- (NSDate *)ce_dateFromStringWithDestinationFormat:(NSString *)destinationFormat;
 
 @end

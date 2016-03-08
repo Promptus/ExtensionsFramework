@@ -53,4 +53,14 @@
     XCTAssertEqualStrings(truncatedString, expectedString);
 }
 
+- (void)testDateFromString {
+    NSDate *dateString = [@"2016-03-08T12:47:34+01:00" ce_dateFromStringWithDestinationFormat:@"dd-MM-yyyy"];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    formatter.dateFormat = @"dd-MM-yyyy";
+    NSDate *expectedDate = [formatter dateFromString:@"08-03-2016"];
+    
+    XCTAssertEqualObjects(dateString, expectedDate);
+}
+
 @end

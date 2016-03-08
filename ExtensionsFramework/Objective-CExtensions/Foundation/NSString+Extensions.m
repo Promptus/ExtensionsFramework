@@ -10,6 +10,8 @@
 #import "UIFont+TilePadFonts.h"
 
 static NSNumberFormatter *floatFormatter;
+static NSDateFormatter *dateFormatter;
+static NSArray *dateFormatterList = nil;
 
 @implementation NSString (Extensions)
 
@@ -121,6 +123,56 @@ static NSNumberFormatter *floatFormatter;
     } while (!isContained);
     
     return initialFontSize;
+}
+
+- (NSDate *)ce_dateFromStringWithDestinationFormat:(NSString *)destinationFormat {
+    if ([self isKindOfClass:[NSNull class]]) {
+        return nil;
+    } else {
+        __block NSDate *convertedDate = nil;
+        
+        if (!dateFormatterList) {
+            dateFormatterList = @[@"yyyy-MM-dd'T'HH:mm:ss'Z'", @"yyyy-MM-dd'T'HH:mm:ssZ",
+                                  @"yyyy-MM-dd'T'HH:mm:ss", @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+                                  @"yyyy-MM-dd'T'HH:mm:ss.SSSZ", @"yyyy-MM-dd HH:mm:ss",
+                                  @"MM/dd/yyyy HH:mm:ss", @"MM/dd/yyyy'T'HH:mm:ss.SSS'Z'",
+                                  @"MM/dd/yyyy'T'HH:mm:ss.SSSZ", @"MM/dd/yyyy'T'HH:mm:ss.SSS",
+                                  @"MM/dd/yyyy'T'HH:mm:ssZ", @"MM/dd/yyyy'T'HH:mm:ss",
+                                  @"yyyy:MM:dd HH:mm:ss", @"yyyyMMdd", @"dd-MM-yyyy",
+                                  @"dd/MM/yyyy", @"yyyy-MM-dd", @"yyyy/MM/dd",
+                                  @"dd MMMM yyyy", @"MMddyyyy", @"MM/dd/yyyy",
+                                  @"MM-dd-yyyy", @"d'st' MMMM yyyy",
+                                  @"d'nd' MMMM yyyy", @"d'rd' MMMM yyyy",
+                                  @"d'th' MMMM yyyy", @"d'st' MMM yyyy",
+                                  @"d'nd' MMM yyyy", @"d'rd' MMM yyyy",
+                                  @"d'th' MMM yyyy", @"d'st' MMMM",
+                                  @"d'nd' MMMM", @"d'rd' MMMM",
+                                  @"d'th' MMMM", @"d'st' MMM",
+                                  @"d'nd' MMM", @"d'rd' MMM",
+                                  @"d'th' MMM", @"MMMM, yyyy",
+                                  @"MMMM yyyy"];
+        }
+        
+        if (!dateFormatter) {
+            dateFormatter = [[NSDateFormatter alloc] init];
+            dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+        }
+        
+        [dateFormatterList enumerateObjectsUsingBlock:^(NSString *dateFormat, NSUInteger idx, BOOL * _Nonnull stop) {
+            dateFormatter.dateFormat = dateFormat;
+            NSDate *date = [dateFormatter dateFromString:self];
+            
+            if (date) {
+                dateFormatter.dateFormat = destinationFormat;
+                convertedDate = [dateFormatter dateFromString:[dateFormatter stringFromDate:date]];
+                 *stop = YES;
+            }
+        }];
+        
+        return convertedDate;
+
+    }
+   
 }
 
 @end
