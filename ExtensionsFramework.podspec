@@ -25,7 +25,7 @@ s.homepage     = "https://github.com/Promptus/ExtensionsFramework.git"
 s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git", :tag => "#{s.version}"}
 
 # 7
-s.dependency 'Reachability', '~> 3.1.1'
+s.dependency 'Reachability', '~> 3.2'
 s.dependency 'iCarousel',    '~> 1.7'
 
 # 8
