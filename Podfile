@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'ExtensionsFramework' do
 
-pod 'Reachability', '~> 3.1.1'
+pod 'Reachability', '= 3.2'
 pod 'iCarousel',    '~> 1.7'
 #pod 'Google/Analytics'
 
@@ -11,7 +11,7 @@ end
 
 target 'ExtensionsFrameworkTests' do
 
-pod 'Reachability', '~> 3.1.1'
+pod 'Reachability', '= 3.2'
 pod 'iCarousel',    '~> 1.7'
 #pod 'Google/Analytics'
 
