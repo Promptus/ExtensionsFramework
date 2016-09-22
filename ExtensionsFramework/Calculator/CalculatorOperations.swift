@@ -39,7 +39,7 @@ class CalculatorOperations
     fileprivate var operationStack = [Double]()
     fileprivate var knownOperations = [String:Operation]()
     fileprivate var lastUsedSymbol =  String()
-    var lastUsedOperand = Double?()
+    var lastUsedOperand: Double?
     weak var delegate: DisplayTemporaryValueDelegate?
     
     init() {

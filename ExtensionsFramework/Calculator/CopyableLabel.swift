@@ -36,14 +36,14 @@ class CopyableLabel: UILabel {
         return false
     }
     
-    override func copy(_ sender: AnyObject?) {
+    override func copy(_ sender: Any?) {
         let board = UIPasteboard.general
         board.string = self.text
         self.isHighlighted = false
         self.resignFirstResponder()
     }
     
-    override func paste(_ sender: AnyObject?) {
+    override func paste(_ sender: Any?) {
         let board = UIPasteboard.general
         if let string = board.string {
             if string != "" && Int(string) != nil {

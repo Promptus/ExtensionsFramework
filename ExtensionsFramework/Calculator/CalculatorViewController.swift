@@ -131,7 +131,7 @@ open class CalculatorViewController: UIViewController, EditedLabelDelegate, Disp
                 let numberFormatter = NumberFormatter()
                 numberFormatter.numberStyle = NumberFormatter.Style.decimal
                 numberFormatter.maximumFractionDigits = 15
-                let tempDisplayString = numberFormatter.string(from: NSNumber(newValue))!
+                let tempDisplayString = numberFormatter.string(from: NSNumber(value: newValue))!
                 
                 let array = tempDisplayString.components(separatedBy: ",")
                 var tempDisplayText = "0" as String
