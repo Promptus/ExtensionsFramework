@@ -15,47 +15,47 @@ let kMinus = "−"
 let kPercentage = "%"
 
 protocol DisplayTemporaryValueDelegate: class {
-    func displayTemporaryValue(value: Double?)
+    func displayTemporaryValue(_ value: Double?)
 }
 
 class CalculatorOperations
 {
-    private enum Operation: CustomStringConvertible {
-        case UnaryOperation(String, Double -> Double)
-        case BinaryOperation(String, (Double, Double) -> Double)
+    fileprivate enum Operation: CustomStringConvertible {
+        case unaryOperation(String, (Double) -> Double)
+        case binaryOperation(String, (Double, Double) -> Double)
         
         var description: String {
             get {
                 switch self {
-                case .UnaryOperation(let symbol, _):
+                case .unaryOperation(let symbol, _):
                     return symbol
-                case .BinaryOperation(let symbol, _):
+                case .binaryOperation(let symbol, _):
                     return symbol
                 }
             }
         }
     }
     
-    private var operationStack = [Double]()
-    private var knownOperations = [String:Operation]()
-    private var lastUsedSymbol =  String()
+    fileprivate var operationStack = [Double]()
+    fileprivate var knownOperations = [String:Operation]()
+    fileprivate var lastUsedSymbol =  String()
     var lastUsedOperand = Double?()
     weak var delegate: DisplayTemporaryValueDelegate?
     
     init() {
-        knownOperations[kMultiply] = Operation.BinaryOperation(kMultiply){$0 * $1}
-        knownOperations[kDivide] = Operation.BinaryOperation(kDivide){$1 / $0}
-        knownOperations[kMinus] = Operation.BinaryOperation(kMinus){$1 - $0}
-        knownOperations[kPlus] = Operation.BinaryOperation(kPlus){$0 + $1}
-        knownOperations[kPercentage] = Operation.UnaryOperation(kPercentage){$0 / 100}
+        knownOperations[kMultiply] = Operation.binaryOperation(kMultiply){$0 * $1}
+        knownOperations[kDivide] = Operation.binaryOperation(kDivide){$1 / $0}
+        knownOperations[kMinus] = Operation.binaryOperation(kMinus){$1 - $0}
+        knownOperations[kPlus] = Operation.binaryOperation(kPlus){$0 + $1}
+        knownOperations[kPercentage] = Operation.unaryOperation(kPercentage){$0 / 100}
     }
     
-    func pushOperand(operand: Double) {
+    func pushOperand(_ operand: Double) {
         operationStack.append(operand)
         print(operationStack)
     }
     
-    func performOperation(symbol: String) -> Double? {
+    func performOperation(_ symbol: String) -> Double? {
         if symbol != lastUsedSymbol {
             let result = operate(lastUsedSymbol)
             if let del = delegate {
@@ -66,7 +66,7 @@ class CalculatorOperations
         return operate(symbol)
     }
     
-    func performEqualOp(value: Double) -> Double? {
+    func performEqualOp(_ value: Double) -> Double? {
         if lastUsedOperand == nil {
             lastUsedOperand = value
         }
@@ -77,20 +77,20 @@ class CalculatorOperations
     func clearStack() {
         lastUsedOperand = nil
         lastUsedSymbol = ""
-        operationStack.removeAll(keepCapacity: false)
+        operationStack.removeAll(keepingCapacity: false)
     }
     
-    private func operate(symbol:String) -> Double? {
+    fileprivate func operate(_ symbol:String) -> Double? {
         if let operation = knownOperations[symbol] {
             lastUsedSymbol = symbol
             switch operation {
-            case .UnaryOperation(_, let operation):
+            case .unaryOperation(_, let operation):
                 if operationStack.count >= 1 {
                     let result = operation(operationStack.removeLast())
                     pushOperand(result)
                     return result
                 }
-            case .BinaryOperation(_, let operation):
+            case .binaryOperation(_, let operation):
                 if operationStack.count >= 2 {
                     let result = operation(operationStack.removeLast(),operationStack.removeLast())
                     pushOperand(result)

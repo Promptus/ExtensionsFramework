@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-public class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
+open class CalculatorViewController: UIViewController, EditedLabelDelegate, DisplayTemporaryValueDelegate {
     
     @IBOutlet var rightSideButtons: [UIButton]! {
         didSet {
@@ -25,14 +25,14 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     
     var userInTheMiddleOfTypingNumber = false
     var calculatorOperations = CalculatorOperations()
-    private var themeColor = UIColor.greenColor()
+    fileprivate var themeColor = UIColor.green
     
     @IBAction func enter() {
         appendDigit()
     }
     
     @IBAction func turnIntoDouble() {
-        if displayLabel.text!.rangeOfString(",") == nil {
+        if displayLabel.text!.range(of: ",") == nil {
             displayLabel.text = displayLabel.text! + ","
         }
         userInTheMiddleOfTypingNumber = true
@@ -58,7 +58,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         userInTheMiddleOfTypingNumber = false
     }
     
-    @IBAction func pressedDigit(sender: UIButton) {
+    @IBAction func pressedDigit(_ sender: UIButton) {
         changeClearButtonTitle("C")
         
         let digit = sender.currentTitle!
@@ -73,7 +73,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         }
     }
     
-    @IBAction func operate(sender: UIButton) {
+    @IBAction func operate(_ sender: UIButton) {
         if userInTheMiddleOfTypingNumber == true || displayLabel.text == "0" {
             appendDigit()
         }
@@ -90,33 +90,33 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     }
     
     //MARK - pushes operands onto the operand stack
-    private func appendDigit() {
+    fileprivate func appendDigit() {
         userInTheMiddleOfTypingNumber = false
         calculatorOperations.pushOperand(displayValue)
     }
     
     //MARK - helper method that changes the clearButton title
-    private func changeClearButtonTitle(title: String) {
-        clearButton.setTitle(title, forState: UIControlState.Normal)
+    fileprivate func changeClearButtonTitle(_ title: String) {
+        clearButton.setTitle(title, for: UIControlState())
     }
     
     //MARK - computed property were we format the display value
     var displayValue:Double {
         get {
             var displayText = displayLabel.text! as String
-            displayText = displayText.stringByReplacingOccurrencesOfString(",", withString: ".")
+            displayText = displayText.replacingOccurrences(of: ",", with: ".")
             if displayText.hasSuffix(".") {
                 displayText = displayText + "0"
             }
-            let numberFormatter = NSNumberFormatter()
-            numberFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-            if let numberString = numberFormatter.numberFromString(displayText) {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.locale = Locale(identifier: "en_US_POSIX")
+            if let numberString = numberFormatter.number(from: displayText) {
                 return numberString.doubleValue
             }
             return 0
         } set {
             //check for integer value
-            let isInteger = newValue % 1 == 0
+            let isInteger = newValue.truncatingRemainder(dividingBy: 1) == 0
             if isInteger {
                 var intValue: Int64 = 0
                 
@@ -128,12 +128,12 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
                 }
                 displayLabel.text = "\(intValue)"
             } else {
-                let numberFormatter = NSNumberFormatter()
-                numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+                let numberFormatter = NumberFormatter()
+                numberFormatter.numberStyle = NumberFormatter.Style.decimal
                 numberFormatter.maximumFractionDigits = 15
-                let tempDisplayString = numberFormatter.stringFromNumber(newValue)!
+                let tempDisplayString = numberFormatter.string(from: NSNumber(newValue))!
                 
-                let array = tempDisplayString.componentsSeparatedByString(",")
+                let array = tempDisplayString.components(separatedBy: ",")
                 var tempDisplayText = "0" as String
                 
                 if let string = array.last {
@@ -141,7 +141,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
                         tempDisplayText = String(format: "%.\(string.utf16.count)f", newValue)
                     }
                 }
-                tempDisplayText = tempDisplayText.stringByReplacingOccurrencesOfString(".", withString: ",")
+                tempDisplayText = tempDisplayText.replacingOccurrences(of: ".", with: ",")
                 displayLabel.text = tempDisplayText
             }
             userInTheMiddleOfTypingNumber = false
@@ -149,13 +149,13 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     }
     
     //MARK - EditedLabelDelegate method(notifies when a value was pasted inside the label)
-    func valueWasPastedInsideLabel(value:String) {
+    func valueWasPastedInsideLabel(_ value:String) {
         userInTheMiddleOfTypingNumber = true
         calculatorOperations.lastUsedOperand = nil
     }
     
     //MARK - DisplayTemporaryValueDelegate method(used to show a temporary result value while doing multiple operations from the stack)
-    func displayTemporaryValue(value: Double?) {
+    func displayTemporaryValue(_ value: Double?) {
         if let val = value {
             displayValue = val
         }
@@ -163,7 +163,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     
     public init(withThemeColor: UIColor) {
         themeColor = withThemeColor
-        let bundle = NSBundle(forClass: CalculatorViewController.self)
+        let bundle = Bundle(for: CalculatorViewController.self)
         super.init(nibName: "CalculatorViewController", bundle: bundle)
     }
     
@@ -171,14 +171,14 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
         super.init(coder: aDecoder)
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         displayLabel.editDelegate = self
         calculatorOperations.delegate = self
         // Do any additional setup after loading the view.
     }
     
-    override public func viewDidAppear(animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         //Google Analytics tracker
@@ -190,7 +190,7 @@ public class CalculatorViewController: UIViewController, EditedLabelDelegate, Di
     }
     
     
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

@@ -9,42 +9,42 @@
 import UIKit
 
 protocol EditedLabelDelegate: class {
-    func valueWasPastedInsideLabel(value:String)
+    func valueWasPastedInsideLabel(_ value:String)
 }
 
 class CopyableLabel: UILabel {
     
     weak var editDelegate:EditedLabelDelegate?
     
-    override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
-        if action == Selector("paste:") || action == Selector("copy:") {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        if action == #selector(UIResponderStandardEditActions.paste(_:)) || action == #selector(UIResponderStandardEditActions.copy(_:)) {
             return true
         } else {
             return super.canPerformAction(action, withSender: sender)
         }
     }
     
-    override func canBecomeFirstResponder() -> Bool {
+    override var canBecomeFirstResponder : Bool {
         return true
     }
     
     override func becomeFirstResponder() -> Bool {
         if super.becomeFirstResponder() {
-            self.highlighted = true
+            self.isHighlighted = true
             return true
         }
         return false
     }
     
-    override func copy(sender: AnyObject?) {
-        let board = UIPasteboard.generalPasteboard()
+    override func copy(_ sender: AnyObject?) {
+        let board = UIPasteboard.general
         board.string = self.text
-        self.highlighted = false
+        self.isHighlighted = false
         self.resignFirstResponder()
     }
     
-    override func paste(sender: AnyObject?) {
-        let board = UIPasteboard.generalPasteboard()
+    override func paste(_ sender: AnyObject?) {
+        let board = UIPasteboard.general
         if let string = board.string {
             if string != "" && Int(string) != nil {
                 self.text = string
@@ -53,20 +53,20 @@ class CopyableLabel: UILabel {
                 }
             }
         }
-        self.highlighted = false
+        self.isHighlighted = false
         self.resignFirstResponder()
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if self.isFirstResponder() == true {
-            self.highlighted = false
-            let menu = UIMenuController.sharedMenuController()
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if self.isFirstResponder == true {
+            self.isHighlighted = false
+            let menu = UIMenuController.shared
             menu.setMenuVisible(false,animated: true)
             menu.update()
             self.resignFirstResponder()
         } else if self.becomeFirstResponder() == true {
-            let menu = UIMenuController.sharedMenuController()
-            menu.setTargetRect(self.bounds, inView: self)
+            let menu = UIMenuController.shared
+            menu.setTargetRect(self.bounds, in: self)
             menu.setMenuVisible(true, animated: true)
         }
     }

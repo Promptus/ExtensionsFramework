@@ -10,7 +10,7 @@ import Foundation
 
 public extension String {
     
-    public func filter(predicate: Character -> Bool) -> String {
+    public func filter(_ predicate: (Character) -> Bool) -> String {
         var result = String()
         for character in self.characters {
             if predicate(character) {
