@@ -70,12 +70,7 @@ static NSArray *dateFormatterList = nil;
 }
 
 - (NSString *)ce_urlStringUsingEncoding:(NSStringEncoding)encoding {
-    NSString *charactersToLeaveUnescaped = @"!*'\"();:@&=+$,/?%#[]% ";
-    return (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,
-                                                                                  (CFStringRef) self,
-                                                                                  (CFStringRef) charactersToLeaveUnescaped,
-                                                                                  NULL,
-                                                                                  CFStringConvertNSStringEncodingToEncoding(encoding)));
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 - (NSString *)ce_removeAllWhiteSpaces {
