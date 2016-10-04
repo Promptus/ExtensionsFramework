@@ -71,14 +71,17 @@
   
   // url with special characters
   NSString *specialCharsStringUrl = [@"https://ätßen_[1]" ce_urlStringUsingEncoding:NSUTF8StringEncoding];
-  XCTAssertNotNil([NSURL URLWithString:specialCharsStringUrl], @"Special chars should be encoded correctly");
+  XCTAssertNotNil([NSURL URLWithString:specialCharsStringUrl], @"Special chars should be encoded");
   
   // url with hash char
-//  NSString *hashCharAllowedStringUrl = @"http://test.com/html#!";
-//  NSString *hashCharAllowedStringUrlEncoded = [hashCharAllowedStringUrl ce_urlStringUsingEncoding:NSUTF8StringEncoding];
-//  XCTAssertEqualStrings(hashCharAllowedStringUrl, hashCharAllowedStringUrlEncoded);
-
-
+  NSString *hashCharAllowedStringUrl = @"http://test.com/html#![]";
+  NSString *hashCharAllowedStringUrlEncoded = [hashCharAllowedStringUrl ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertEqualStrings(hashCharAllowedStringUrl, hashCharAllowedStringUrlEncoded);
+  XCTAssertNotNil([NSURL URLWithString:hashCharAllowedStringUrlEncoded], @"Hash sign should not be encoded");
+  
+  // url without scheme defined
+  NSString *urlWithoutScheme = [@"domain.com" ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertNotNil([NSURL URLWithString:urlWithoutScheme], @"NSURL without a scheme");
 }
 
 @end
