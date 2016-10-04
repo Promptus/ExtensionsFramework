@@ -48,19 +48,40 @@
 }
 
 - (void)testTruncateEmptyStrings {
-    NSString *truncatedString = [@" , , test string" ce_truncateEmptyStringComponentsSeparatedByCharacter:@", "];
-    NSString *expectedString = @"test string";
-    XCTAssertEqualStrings(truncatedString, expectedString);
+  NSString *truncatedString = [@" , , test string" ce_truncateEmptyStringComponentsSeparatedByCharacter:@", "];
+  NSString *expectedString = @"test string";
+  XCTAssertEqualStrings(truncatedString, expectedString);
 }
 
 - (void)testDateFromString {
-    NSDate *dateString = [@"2016-03-08T12:47:34+01:00" ce_dateFromStringWithDestinationFormat:@"dd-MM-yyyy"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-    formatter.dateFormat = @"dd-MM-yyyy";
-    NSDate *expectedDate = [formatter dateFromString:@"08-03-2016"];
-    
-    XCTAssertEqualObjects(dateString, expectedDate);
+  NSDate *dateString = [@"2016-03-08T12:47:34+01:00" ce_dateFromStringWithDestinationFormat:@"dd-MM-yyyy"];
+  NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+  [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+  formatter.dateFormat = @"dd-MM-yyyy";
+  NSDate *expectedDate = [formatter dateFromString:@"08-03-2016"];
+  
+  XCTAssertEqualObjects(dateString, expectedDate);
+}
+
+- (void)testNSURLFromEncodedString {
+  
+  // url with spaces
+  NSString *spacesStringUrl = [@"https://test url " ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertNotNil([NSURL URLWithString:spacesStringUrl], @"Empty space should be encoded");
+  
+  // url with special characters
+  NSString *specialCharsStringUrl = [@"https://ätßen_[1]" ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertNotNil([NSURL URLWithString:specialCharsStringUrl], @"Special chars should be encoded");
+  
+  // url with hash char
+  NSString *hashCharAllowedStringUrl = @"http://test.com/html#![]";
+  NSString *hashCharAllowedStringUrlEncoded = [hashCharAllowedStringUrl ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertEqualStrings(hashCharAllowedStringUrl, hashCharAllowedStringUrlEncoded);
+  XCTAssertNotNil([NSURL URLWithString:hashCharAllowedStringUrlEncoded], @"Hash sign should not be encoded");
+  
+  // url without scheme defined
+  NSString *urlWithoutScheme = [@"domain.com" ce_urlStringUsingEncoding:NSUTF8StringEncoding];
+  XCTAssertNotNil([NSURL URLWithString:urlWithoutScheme], @"NSURL without a scheme");
 }
 
 @end
