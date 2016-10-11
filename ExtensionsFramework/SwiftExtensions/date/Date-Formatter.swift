@@ -38,7 +38,7 @@ public extension Date {
     return formatter.date(from: isoString)
   }
   
-  func toISO8601String(isoType iso8601type: ISO8601Type = .full) -> String? {
+  public func toISO8601String(isoType iso8601type: ISO8601Type = .full) -> String? {
     let dateFormatter = CustomDateFormatter.formatter
     dateFormatter.dateFormat = iso8601type.rawValue
     dateFormatter.timeZone = NSTimeZone.default
@@ -46,7 +46,7 @@ public extension Date {
   }
   
   
-  func toString(template templateFormat: String, locale: Locale = Locale.current) -> String? {
+  public func toString(template templateFormat: String, locale: Locale = Locale.current) -> String? {
     let dateFormatter = CustomDateFormatter.createDateFormatterFromTemplate(templateFormat, locale: locale)
     dateFormatter.timeZone = NSTimeZone.default
     dateFormatter.locale = locale
@@ -55,13 +55,13 @@ public extension Date {
   
 }
 
-open class CustomDateFormatter {
-  open static var formatter: Foundation.DateFormatter = {
+public class CustomDateFormatter {
+  public static var formatter: Foundation.DateFormatter = {
     let formatter = Foundation.DateFormatter()
     return formatter
   }()
   
-  open static func createDateFormatterFromTemplate(_ dateTemplateFormat: String = DateFormat.Default, locale: Locale? = Locale.current) -> Foundation.DateFormatter {
+  public static func createDateFormatterFromTemplate(_ dateTemplateFormat: String = DateFormat.Default, locale: Locale? = Locale.current) -> Foundation.DateFormatter {
     let templateFromat = Foundation.DateFormatter.dateFormat(fromTemplate: dateTemplateFormat, options: 0, locale: locale)
     formatter.dateFormat = templateFromat ?? dateTemplateFormat
     return formatter

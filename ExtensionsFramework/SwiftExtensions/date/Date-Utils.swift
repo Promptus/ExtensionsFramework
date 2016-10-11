@@ -9,7 +9,7 @@
 import Foundation
 
 //MARK: Date utilities methods
-extension Date {
+public extension Date {
   
   public init(date fromDate: Date, year: Int? = nil,
               month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil,
@@ -27,14 +27,14 @@ extension Date {
     self.init(timeIntervalSinceReferenceDate: (Calendar.current.date(from: newComponents)?.timeIntervalSinceReferenceDate)!)
   }
   
-  func nearestDateWithMinuteInterval(_ minuteInterval: Int) -> Date {
+  public func nearestDateWithMinuteInterval(_ minuteInterval: Int) -> Date {
     let nextTimeSlotRatio = ceil(Float(self.minute) / Float(minuteInterval))
     let nextMinute = (Int(nextTimeSlotRatio) * minuteInterval) % 60
     
     return Date(date: self, hour:self.nearestHour, minute: nextMinute, second: 0, nanosecond: 0)
   }
   
-  func isBetweeen(date date1: Date, andDate date2: Date) -> Bool {
+  public func isBetweeen(date date1: Date, andDate date2: Date) -> Bool {
     return date1.compare(self).rawValue * self.compare(date2).rawValue >= 0
   }
   
