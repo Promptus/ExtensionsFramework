@@ -20,13 +20,13 @@ public enum ISO8601Type: String {
 }
 
 public struct DateFormat {
-  static let Default = "yyyy-MM-dd'T'HH:mm:ss"
-  static let DateTimeShort = "ddMMYYHH:mm"
-  static let TimeShort = "jj:mm"
-  static let DayMonth = "EEEEdMMMM"
-  static let LongDateTimeFormat = "EEEdMMMM jj:mm"
-  static let Date = "EEEEdMMMMYYYY"
-  static let DateShort = "EEEdMM"
+  public static let Default = "yyyy-MM-dd'T'HH:mm:ss"
+  public static let DateTimeShort = "ddMMYYHH:mm"
+  public static let TimeShort = "jj:mm"
+  public static let DayMonth = "EEEEdMMMM"
+  public static let LongDateTimeFormat = "EEEdMMMM jj:mm"
+  public static let Date = "EEEEdMMMMYYYY"
+  public static let DateShort = "EEEdMM"
 }
 
 public extension Date {
