@@ -76,6 +76,10 @@
 		A5F8D6E41C22F56C00EEFB33 /* UIFont+TilePadFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E21C22F56C00EEFB33 /* UIFont+TilePadFonts.m */; };
 		A5F8D6E71C22F7A800EEFB33 /* NSObject+AssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F8D6E51C22F7A800EEFB33 /* NSObject+AssociatedObjects.h */; };
 		A5F8D6E81C22F7A800EEFB33 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */; };
+		A92C33431DAD194C008A23C2 /* Date-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C333F1DAD194C008A23C2 /* Date-Components.swift */; };
+		A92C33441DAD194C008A23C2 /* Date-Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33401DAD194C008A23C2 /* Date-Formatter.swift */; };
+		A92C33451DAD194C008A23C2 /* Date-Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33411DAD194C008A23C2 /* Date-Utils.swift */; };
+		A92C33461DAD194C008A23C2 /* NSDate-Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */; };
 		E5267E2F1C57939900DE3123 /* CALayer+InterspaceBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */; };
 		E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */; };
 		E52B65EA1C64FA0100D4D15A /* NSNumberExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B65E91C64FA0100D4D15A /* NSNumberExtensionsTest.m */; };
@@ -173,6 +177,10 @@
 		A5F8D6E21C22F56C00EEFB33 /* UIFont+TilePadFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TilePadFonts.m"; sourceTree = "<group>"; };
 		A5F8D6E51C22F7A800EEFB33 /* NSObject+AssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObjects.h"; sourceTree = "<group>"; };
 		A5F8D6E61C22F7A800EEFB33 /* NSObject+AssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObjects.m"; sourceTree = "<group>"; };
+		A92C333F1DAD194C008A23C2 /* Date-Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Components.swift"; sourceTree = "<group>"; };
+		A92C33401DAD194C008A23C2 /* Date-Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Formatter.swift"; sourceTree = "<group>"; };
+		A92C33411DAD194C008A23C2 /* Date-Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Utils.swift"; sourceTree = "<group>"; };
+		A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Compatibility.swift"; sourceTree = "<group>"; };
 		BD2E2A693CE01DDD92C2553F /* Pods-ExtensionsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+InterspaceBorder.h"; sourceTree = "<group>"; };
 		E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+InterspaceBorder.m"; sourceTree = "<group>"; };
@@ -372,6 +380,17 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		A92C333E1DAD194C008A23C2 /* date */ = {
+			isa = PBXGroup;
+			children = (
+				A92C333F1DAD194C008A23C2 /* Date-Components.swift */,
+				A92C33401DAD194C008A23C2 /* Date-Formatter.swift */,
+				A92C33411DAD194C008A23C2 /* Date-Utils.swift */,
+				A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */,
+			);
+			path = date;
+			sourceTree = "<group>";
+		};
 		C6CB03551B0140B5618E8F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +452,7 @@
 		E5AA7D491BEB86AE00B8EFA7 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				A92C333E1DAD194C008A23C2 /* date */,
 				E58534A21BFCC7DB00825144 /* StringExtensions.swift */,
 			);
 			path = SwiftExtensions;
@@ -693,6 +713,7 @@
 				A5A9C8211C11DE5000289DE3 /* NSSet+Extensions.m in Sources */,
 				A5A9C83F1C11DF8000289DE3 /* UIColor+Extensions.m in Sources */,
 				A5F8D6D81C22EFCC00EEFB33 /* UIImageView+Extensions.m in Sources */,
+				A92C33461DAD194C008A23C2 /* NSDate-Compatibility.swift in Sources */,
 				A5F8D6E41C22F56C00EEFB33 /* UIFont+TilePadFonts.m in Sources */,
 				A5A9C8451C11DF8000289DE3 /* UIView+Extensions.m in Sources */,
 				A51421241C182A2500796FE9 /* WeekPicker.m in Sources */,
@@ -704,6 +725,7 @@
 				A514212D1C182A2C00796FE9 /* PPWebBrowserViewController.m in Sources */,
 				A5794BD51C2180D000E1E172 /* CalculatorViewController.swift in Sources */,
 				A5DDB3D11C3C140B00BEA15F /* GAManager.swift in Sources */,
+				A92C33441DAD194C008A23C2 /* Date-Formatter.swift in Sources */,
 				A51421211C182A2500796FE9 /* NumberPad.m in Sources */,
 				A5A9C8311C11DF4700289DE3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				A5A9C81D1C11DDE500289DE3 /* NSNumber+Extensions.m in Sources */,
@@ -712,6 +734,7 @@
 				A5F8D6DC1C22F13000EEFB33 /* AdjustableTextLayer.m in Sources */,
 				A5A9C8411C11DF8000289DE3 /* UIImage+Extensions.m in Sources */,
 				A51421261C182A2500796FE9 /* WeekPickerItem.m in Sources */,
+				A92C33431DAD194C008A23C2 /* Date-Components.swift in Sources */,
 				A5A9C8111C11DC2900289DE3 /* NSArray+Extensions.m in Sources */,
 				A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */,
 				A514213A1C182A3B00796FE9 /* CoreDataManager.m in Sources */,
@@ -721,6 +744,7 @@
 				A51421331C182A3400796FE9 /* ApplicationHelper.m in Sources */,
 				A5A9C8251C11DE7C00289DE3 /* NSDictionary+Extensions.m in Sources */,
 				E56986781C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m in Sources */,
+				A92C33451DAD194C008A23C2 /* Date-Utils.swift in Sources */,
 				A5A9C80D1C11D8E600289DE3 /* NSString+Extensions.m in Sources */,
 				E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */,
 				A5794BD81C21816200E1E172 /* CalculatorOperations.swift in Sources */,
