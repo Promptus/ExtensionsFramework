@@ -46,7 +46,7 @@ public extension Date {
   }
   
   
-  func toString(_ templateFormat: String, locale: Locale = Locale.current) -> String? {
+  func toString(template templateFormat: String, locale: Locale = Locale.current) -> String? {
     let dateFormatter = CustomDateFormatter.createDateFormatterFromTemplate(templateFormat, locale: locale)
     dateFormatter.timeZone = NSTimeZone.default
     dateFormatter.locale = locale

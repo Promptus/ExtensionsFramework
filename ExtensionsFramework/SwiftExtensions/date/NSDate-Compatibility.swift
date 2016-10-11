@@ -14,9 +14,9 @@ public extension NSDate {
     return Date.parseISO8601String(isoStringDate) as NSDate?
   }
   
-  func toString(_ templateFormat: String) -> String? {
+  func toString(template templateFormat: String) -> String? {
     let swiftDate = self as Date
-    return swiftDate.toString(templateFormat)
+    return swiftDate.toString(template: templateFormat)
   }
   
   func isBetweeen(date date1: NSDate, andDate date2: NSDate) -> Bool {
