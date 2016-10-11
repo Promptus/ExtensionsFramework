@@ -19,7 +19,7 @@ public enum ISO8601Type: String {
   case extended				= "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
 }
 
-struct DateFormat {
+public struct DateFormat {
   static let Default = "yyyy-MM-dd'T'HH:mm:ss"
   static let DateTimeShort = "ddMMYYHH:mm"
   static let TimeShort = "jj:mm"
