@@ -71,7 +71,7 @@ static NSArray *dateFormatterList = nil;
 
 - (NSString *)ce_urlStringUsingEncoding:(NSStringEncoding)encoding {
   NSMutableCharacterSet *allowedChars = [[NSCharacterSet URLQueryAllowedCharacterSet] mutableCopy];
-  [allowedChars addCharactersInString:@"#[]{}<>"]; //those characters are not defined in URLQueryAllowedCharacterSet
+  [allowedChars addCharactersInString:@"#[]{}<>%"]; //those characters are not defined in URLQueryAllowedCharacterSet
   
   return [self stringByAddingPercentEncodingWithAllowedCharacters:allowedChars];
 }

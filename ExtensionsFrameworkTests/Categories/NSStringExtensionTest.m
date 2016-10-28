@@ -74,7 +74,7 @@
   XCTAssertNotNil([NSURL URLWithString:specialCharsStringUrl], @"Special chars should be encoded");
   
   // url with hash char
-  NSString *hashCharAllowedStringUrl = @"http://test.com/html#![]";
+  NSString *hashCharAllowedStringUrl = @"http://test.com/html#![]?id=%7B";
   NSString *hashCharAllowedStringUrlEncoded = [hashCharAllowedStringUrl ce_urlStringUsingEncoding:NSUTF8StringEncoding];
   XCTAssertEqualStrings(hashCharAllowedStringUrl, hashCharAllowedStringUrlEncoded);
   XCTAssertNotNil([NSURL URLWithString:hashCharAllowedStringUrlEncoded], @"Hash sign should not be encoded");
