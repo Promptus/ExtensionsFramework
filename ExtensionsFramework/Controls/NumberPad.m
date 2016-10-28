@@ -38,7 +38,8 @@
     string = self.target.text ? self.target.text : @"";
     self.maxScale = 20;
     self.comma = @",";
-    UIView * padView = [[NSBundle mainBundle] loadNibNamed:@"NumberPad" owner:self options:NULL][0];
+    NSBundle *resourceBundle = [NSBundle bundleForClass:[self class]];
+    UIView * padView = [resourceBundle loadNibNamed:@"NumberPad" owner:self options:NULL][0];
     padView.backgroundColor = self.backgroundColor;
     padView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     [self addSubview:padView];
