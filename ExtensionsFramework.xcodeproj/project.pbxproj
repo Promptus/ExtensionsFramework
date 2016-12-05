@@ -86,6 +86,9 @@
 		E569801F1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E569801E1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m */; };
 		E56986771C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */; };
 		E56986781C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */; };
+		E578EEE91DF55E76004A3254 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EEE81DF55E76004A3254 /* SortDescriptor.swift */; };
+		E578EEEC1DF5600C004A3254 /* SortDescriptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EEEB1DF5600C004A3254 /* SortDescriptorTests.swift */; };
+		E578EEED1DF565EF004A3254 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EEE81DF55E76004A3254 /* SortDescriptor.swift */; };
 		E58534A31BFCC7DB00825144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
 		E58534A81BFCC83900825144 /* ExtensionsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E58534A41BFCC7E400825144 /* ExtensionsFramework.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E5AA7D3A1BEB864E00B8EFA7 /* ExtensionsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA7D2F1BEB864E00B8EFA7 /* ExtensionsFramework.framework */; };
@@ -188,6 +191,8 @@
 		E569801E1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDecimalNumberExtensionsTest.m; sourceTree = "<group>"; };
 		E56986751C5FAC6900407DF0 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		E56986761C5FAC6900407DF0 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		E578EEE81DF55E76004A3254 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptor.swift; sourceTree = "<group>"; };
+		E578EEEB1DF5600C004A3254 /* SortDescriptorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptorTests.swift; sourceTree = "<group>"; };
 		E58534A21BFCC7DB00825144 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E58534A41BFCC7E400825144 /* ExtensionsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionsFramework.h; sourceTree = "<group>"; };
 		E58534A51BFCC7E400825144 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -266,6 +271,7 @@
 				A51421311C182A3400796FE9 /* ApplicationHelper.m */,
 				A5F8D6D91C22F13000EEFB33 /* AdjustableTextLayer.h */,
 				A5F8D6DA1C22F13000EEFB33 /* AdjustableTextLayer.m */,
+				E578EEE81DF55E76004A3254 /* SortDescriptor.swift */,
 			);
 			name = Helpers;
 			path = ExtensionsFramework/Helpers;
@@ -402,6 +408,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E578EEEA1DF55FD4004A3254 /* HelpersTests */ = {
+			isa = PBXGroup;
+			children = (
+				E578EEEB1DF5600C004A3254 /* SortDescriptorTests.swift */,
+			);
+			name = HelpersTests;
+			sourceTree = "<group>";
+		};
 		E5AA7D251BEB864E00B8EFA7 = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +456,7 @@
 		E5AA7D3D1BEB864E00B8EFA7 /* ExtensionsFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				E578EEEA1DF55FD4004A3254 /* HelpersTests */,
 				A5F8D6CC1C22E2FE00EEFB33 /* Categories */,
 				E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */,
 				E5AA7D401BEB864E00B8EFA7 /* Info.plist */,
@@ -655,7 +670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		71B190973ECB2B7CD307EFF0 /* [CP] Copy Pods Resources */ = {
@@ -685,7 +700,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FA776F50E88B0D4D6F608772 /* [CP] Embed Pods Frameworks */ = {
@@ -736,6 +751,7 @@
 				A51421261C182A2500796FE9 /* WeekPickerItem.m in Sources */,
 				A92C33431DAD194C008A23C2 /* Date-Components.swift in Sources */,
 				A5A9C8111C11DC2900289DE3 /* NSArray+Extensions.m in Sources */,
+				E578EEE91DF55E76004A3254 /* SortDescriptor.swift in Sources */,
 				A514214B1C182B9500796FE9 /* NSFileManager+DirectoryLocations.m in Sources */,
 				A514213A1C182A3B00796FE9 /* CoreDataManager.m in Sources */,
 				A5794BDA1C21818600E1E172 /* CopyableLabel.swift in Sources */,
@@ -756,7 +772,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F8D6CF1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m in Sources */,
+				E578EEED1DF565EF004A3254 /* SortDescriptor.swift in Sources */,
 				A5F8D6D01C22E2FE00EEFB33 /* NSStringExtensionTest.m in Sources */,
+				E578EEEC1DF5600C004A3254 /* SortDescriptorTests.swift in Sources */,
 				E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */,
 				E569801F1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m in Sources */,
 				E52B65EA1C64FA0100D4D15A /* NSNumberExtensionsTest.m in Sources */,
