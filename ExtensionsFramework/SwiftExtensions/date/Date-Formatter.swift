@@ -39,12 +39,15 @@ public extension Date {
   }
   
   public func toISO8601String(isoType iso8601type: ISO8601Type = .full) -> String? {
+    return self.toString(format: iso8601type.rawValue)
+  }
+  
+  func toString(format dateFormat: String) -> String? {
     let dateFormatter = CustomDateFormatter.formatter
-    dateFormatter.dateFormat = iso8601type.rawValue
+    dateFormatter.dateFormat = dateFormat
     dateFormatter.timeZone = NSTimeZone.default
     return dateFormatter.string(from: self)
   }
-  
   
   public func toString(template templateFormat: String, locale: Locale = Locale.current) -> String? {
     let dateFormatter = CustomDateFormatter.createDateFormatterFromTemplate(templateFormat, locale: locale)
