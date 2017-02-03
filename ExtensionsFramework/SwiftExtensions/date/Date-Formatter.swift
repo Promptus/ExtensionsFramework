@@ -42,7 +42,7 @@ public extension Date {
     return self.toString(format: iso8601type.rawValue)
   }
   
-  func toString(format dateFormat: String) -> String? {
+  public func toString(format dateFormat: String) -> String? {
     let dateFormatter = CustomDateFormatter.formatter
     dateFormatter.dateFormat = dateFormat
     dateFormatter.timeZone = NSTimeZone.default
