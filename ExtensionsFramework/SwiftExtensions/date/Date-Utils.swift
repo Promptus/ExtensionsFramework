@@ -38,6 +38,18 @@ public extension Date {
     return date1.compare(self).rawValue * self.compare(date2).rawValue >= 0
   }
   
+  public func startOfDay(calendar: Calendar = Calendar.current) -> Date {
+    return calendar.startOfDay(for: self)
+  }
+  
+  public func endOfDay(calendar: Calendar = Calendar.current) -> Date {
+    let startOfDayDate = startOfDay()
+    var components = DateComponents()
+    components.day = 1
+    components.second = -1
+    return calendar.date(byAdding: components, to: startOfDayDate) ?? (startOfDayDate + 23.hours)
+  }
+  
 }
 
 

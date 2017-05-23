@@ -80,6 +80,12 @@
 		A92C33441DAD194C008A23C2 /* Date-Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33401DAD194C008A23C2 /* Date-Formatter.swift */; };
 		A92C33451DAD194C008A23C2 /* Date-Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33411DAD194C008A23C2 /* Date-Utils.swift */; };
 		A92C33461DAD194C008A23C2 /* NSDate-Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */; };
+		A993D34C1ED454CF00843EF2 /* Date-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C333F1DAD194C008A23C2 /* Date-Components.swift */; };
+		A993D34D1ED454D200843EF2 /* Date-Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33401DAD194C008A23C2 /* Date-Formatter.swift */; };
+		A993D34E1ED454D400843EF2 /* Date-Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33411DAD194C008A23C2 /* Date-Utils.swift */; };
+		A993D34F1ED454D600843EF2 /* NSDate-Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */; };
+		A993D3501ED454D900843EF2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58534A21BFCC7DB00825144 /* StringExtensions.swift */; };
+		A993D3521ED4550B00843EF2 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993D3511ED4550B00843EF2 /* DateExtensionTests.swift */; };
 		E5267E2F1C57939900DE3123 /* CALayer+InterspaceBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */; };
 		E5267E301C57939900DE3123 /* CALayer+InterspaceBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */; };
 		E52B65EA1C64FA0100D4D15A /* NSNumberExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B65E91C64FA0100D4D15A /* NSNumberExtensionsTest.m */; };
@@ -184,6 +190,7 @@
 		A92C33401DAD194C008A23C2 /* Date-Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Formatter.swift"; sourceTree = "<group>"; };
 		A92C33411DAD194C008A23C2 /* Date-Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Utils.swift"; sourceTree = "<group>"; };
 		A92C33421DAD194C008A23C2 /* NSDate-Compatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Compatibility.swift"; sourceTree = "<group>"; };
+		A993D3511ED4550B00843EF2 /* DateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 		BD2E2A693CE01DDD92C2553F /* Pods-ExtensionsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsFramework/Pods-ExtensionsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E5267E2D1C57939900DE3123 /* CALayer+InterspaceBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+InterspaceBorder.h"; sourceTree = "<group>"; };
 		E5267E2E1C57939900DE3123 /* CALayer+InterspaceBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+InterspaceBorder.m"; sourceTree = "<group>"; };
@@ -456,6 +463,7 @@
 		E5AA7D3D1BEB864E00B8EFA7 /* ExtensionsFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				A993D3511ED4550B00843EF2 /* DateExtensionTests.swift */,
 				E578EEEA1DF55FD4004A3254 /* HelpersTests */,
 				A5F8D6CC1C22E2FE00EEFB33 /* Categories */,
 				E5AA7D3E1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift */,
@@ -670,7 +678,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		71B190973ECB2B7CD307EFF0 /* [CP] Copy Pods Resources */ = {
@@ -700,7 +708,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FA776F50E88B0D4D6F608772 /* [CP] Embed Pods Frameworks */ = {
@@ -771,12 +779,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A993D3501ED454D900843EF2 /* StringExtensions.swift in Sources */,
 				A5F8D6CF1C22E2FE00EEFB33 /* NSArrayExtensionsTest.m in Sources */,
+				A993D3521ED4550B00843EF2 /* DateExtensionTests.swift in Sources */,
+				A993D34E1ED454D400843EF2 /* Date-Utils.swift in Sources */,
+				A993D34C1ED454CF00843EF2 /* Date-Components.swift in Sources */,
 				E578EEED1DF565EF004A3254 /* SortDescriptor.swift in Sources */,
 				A5F8D6D01C22E2FE00EEFB33 /* NSStringExtensionTest.m in Sources */,
 				E578EEEC1DF5600C004A3254 /* SortDescriptorTests.swift in Sources */,
+				A993D34D1ED454D200843EF2 /* Date-Formatter.swift in Sources */,
 				E5AA7D3F1BEB864E00B8EFA7 /* ExtensionsFrameworkTests.swift in Sources */,
 				E569801F1C64E7BF0038A889 /* NSDecimalNumberExtensionsTest.m in Sources */,
+				A993D34F1ED454D600843EF2 /* NSDate-Compatibility.swift in Sources */,
 				E52B65EA1C64FA0100D4D15A /* NSNumberExtensionsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
