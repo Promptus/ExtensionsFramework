@@ -35,30 +35,38 @@ public extension Date {
     guard let isoString = isoStringDate as? String else { return nil }
     let formatter = CustomDateFormatter.formatter
     formatter.dateFormat = isoType.rawValue
+    formatter.calendar = CustomDateFormatter.gregorianCalendar
     return formatter.date(from: isoString)
   }
   
   public func toISO8601String(isoType iso8601type: ISO8601Type = .full) -> String? {
-    return self.toString(format: iso8601type.rawValue)
+    return toString(format: iso8601type.rawValue)
   }
   
-  public func toString(format dateFormat: String) -> String? {
+  public func toString(format dateFormat: String, calendar: Calendar = Calendar.current) -> String? {
     let dateFormatter = CustomDateFormatter.formatter
     dateFormatter.dateFormat = dateFormat
     dateFormatter.timeZone = NSTimeZone.default
+    dateFormatter.calendar = calendar
     return dateFormatter.string(from: self)
   }
   
-  public func toString(template templateFormat: String, locale: Locale = Locale.current) -> String? {
+  public func toString(template templateFormat: String, locale: Locale = Locale.current, calendar: Calendar = Calendar.current) -> String? {
     let dateFormatter = CustomDateFormatter.createDateFormatterFromTemplate(templateFormat, locale: locale)
     dateFormatter.timeZone = NSTimeZone.default
     dateFormatter.locale = locale
+    dateFormatter.calendar = calendar
     return dateFormatter.string(from: self)
   }
   
 }
 
 public class CustomDateFormatter {
+  
+  public static var gregorianCalendar: Calendar = {
+    return Calendar(identifier: .gregorian)
+  }()
+  
   public static var formatter: Foundation.DateFormatter = {
     let formatter = Foundation.DateFormatter()
     return formatter
