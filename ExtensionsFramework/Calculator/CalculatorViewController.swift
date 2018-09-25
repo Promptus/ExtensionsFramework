@@ -97,7 +97,7 @@ open class CalculatorViewController: UIViewController, EditedLabelDelegate, Disp
     
     //MARK - helper method that changes the clearButton title
     fileprivate func changeClearButtonTitle(_ title: String) {
-        clearButton.setTitle(title, for: UIControlState())
+        clearButton.setTitle(title, for: UIControl.State.normal)
     }
     
     //MARK - computed property were we format the display value
@@ -161,7 +161,7 @@ open class CalculatorViewController: UIViewController, EditedLabelDelegate, Disp
         }
     }
     
-    public init(withThemeColor: UIColor) {
+    @objc public init(withThemeColor: UIColor) {
         themeColor = withThemeColor
         let bundle = Bundle(for: CalculatorViewController.self)
         super.init(nibName: "CalculatorViewController", bundle: bundle)
