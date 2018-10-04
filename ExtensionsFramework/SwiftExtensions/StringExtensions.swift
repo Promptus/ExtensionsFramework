@@ -12,7 +12,7 @@ public extension String {
     
     public func filter(_ predicate: (Character) -> Bool) -> String {
         var result = String()
-        for character in self.characters {
+        for character in self {
             if predicate(character) {
                 result.append(character)
             }

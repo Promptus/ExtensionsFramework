@@ -8,7 +8,7 @@ s.summary      = "A collection of Objective-C/Swift extensions"
 s.requires_arc = true
 
 # 2
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 
 # 3
 #if there is a license file available 
@@ -34,5 +34,7 @@ s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'
 # 9
 s.resources    = 'ExtensionsFramework/**/*.{png,xib,xcassets}'
 
+# 10
+s.swift_version = '4.2'
 
 end
