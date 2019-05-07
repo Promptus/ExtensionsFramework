@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform     = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '10.0'
 s.name         = "ExtensionsFramework"
 s.summary      = "A collection of Objective-C/Swift extensions"
 s.requires_arc = true
 
 # 2
-s.version      = "0.0.2"
+s.version      = "0.0.3"
 
 # 3
 #if there is a license file available 
@@ -26,7 +26,7 @@ s.source       = { :git => "https://github.com/Promptus/ExtensionsFramework.git"
 
 # 7
 s.dependency 'Reachability', '~> 3.2'
-s.dependency 'iCarousel',    '~> 1.7'
+s.dependency 'iCarousel',    '~> 1.8.3'
 
 # 8
 s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'
@@ -35,6 +35,6 @@ s.source_files = 'ExtensionsFramework', 'ExtensionsFramework/**/*.{h,m,swift}'
 s.resources    = 'ExtensionsFramework/**/*.{png,xib,xcassets}'
 
 # 10
-s.swift_version = '4.2'
+s.swift_version = '5.0'
 
 end
