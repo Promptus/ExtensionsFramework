@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform     = :ios
-s.ios.deployment_target = '10.0'
+s.ios.deployment_target = '11.0'
 s.name         = "ExtensionsFramework"
 s.summary      = "A collection of Objective-C/Swift extensions"
 s.requires_arc = true
 
 # 2
-s.version      = "0.0.3"
+s.version      = "0.0.4"
 
 # 3
 #if there is a license file available 
