@@ -47,7 +47,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  webView.delegate = self;
+  webView.navigationDelegate = self;
   navigationBar.topItem.title = self.urlString;
   UIColor * _tintColor = tintColor ? tintColor : [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
   if (titleColor) {
@@ -77,7 +77,7 @@
 }
 
 - (IBAction)actionButtonClicked:(id)sender {
-  [[UIApplication sharedApplication] openURL:webView.request.URL];
+  [[UIApplication sharedApplication] openURL:webView.URL];
 }
 
 - (IBAction)backButtonClicked:(id)sender {
@@ -90,17 +90,25 @@
     [webView goForward];
 }
 
-#pragma mark UIWebViewDelegate
+#pragma mark WKNavigationDelegate
 
-- (void)webViewDidFinishLoad:(UIWebView *)_webView {
-  NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-  navigationBar.topItem.title = [NSString ce_isBlank:title] ? webView.request.URL.absoluteString : title;
-  backButton.enabled = [webView canGoBack];
-  forwardButton.enabled = [webView canGoForward];
+-(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    __weak PPWebBrowserViewController *weakSelf = self;
+    [webView evaluateJavaScript:@"document.title" completionHandler:^(NSString *result, NSError *error) {
+        PPWebBrowserViewController *strongSelf = weakSelf;
+        [strongSelf setupNavigationBarTitle: result];
+    }];
+    
+    backButton.enabled = [webView canGoBack];
+    forwardButton.enabled = [webView canGoForward];
 }
 
--(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-  return YES;
+-(void)setupNavigationBarTitle:(NSString *)title {
+    navigationBar.topItem.title = title;
+}
+
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 -(void)setTintColor:(UIColor *)_tintColor {

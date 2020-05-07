@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface PPWebBrowserViewController : UIViewController <UIWebViewDelegate, NSURLConnectionDelegate> {
-  IBOutlet UIWebView *       webView;
+@interface PPWebBrowserViewController : UIViewController <WKNavigationDelegate, NSURLConnectionDelegate> {
+    
+  IBOutlet WKWebView *       webView;
   IBOutlet UIBarButtonItem * closeButton;
   IBOutlet UIBarButtonItem * actionButton;
   IBOutlet UIBarButtonItem * backButton;
