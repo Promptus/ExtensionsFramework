@@ -65,7 +65,7 @@
 }
 
 - (NSManagedObjectContext *)createManagedObjectContext {
-  NSManagedObjectContext * context = [[NSManagedObjectContext alloc] init];
+  NSManagedObjectContext * context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
   [context setPersistentStoreCoordinator:[self persistentStoreCoordinator]];
   context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy;
   return context;
