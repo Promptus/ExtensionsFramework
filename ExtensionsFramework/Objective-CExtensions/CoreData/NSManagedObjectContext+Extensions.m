@@ -142,7 +142,7 @@
 
 - (void)ce_fetchRequest:(NSFetchRequest *)fetchRequest withCallback:(FetchObjectsCallback)callback
 {
-  NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+  NSManagedObjectContext *context = [[NSManagedObjectContext alloc] init];
   [context setPersistentStoreCoordinator:[self persistentStoreCoordinator]];
   
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
