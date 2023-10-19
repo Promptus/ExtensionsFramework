@@ -14,7 +14,7 @@ let kPlus = "+"
 let kMinus = "−"
 let kPercentage = "%"
 
-protocol DisplayTemporaryValueDelegate: class {
+protocol DisplayTemporaryValueDelegate: AnyObject {
     func displayTemporaryValue(_ value: Double?)
 }
 

@@ -77,7 +77,7 @@
 }
 
 - (IBAction)actionButtonClicked:(id)sender {
-  [[UIApplication sharedApplication] openURL:webView.URL];
+  [[UIApplication sharedApplication] openURL:webView.URL options:@{} completionHandler:nil];
 }
 
 - (IBAction)backButtonClicked:(id)sender {
