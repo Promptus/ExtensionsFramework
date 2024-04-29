@@ -43,7 +43,7 @@
 }
 
 - (NSInteger)ce_integerWithNumberOfDecimalValues:(NSInteger)numberOfDecimals {
-    NSDecimalNumberHandler *behaviour = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:numberOfDecimals raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:NO];
+    NSDecimalNumberHandler *behaviour = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundBankers scale:numberOfDecimals raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:NO];
     NSDecimalNumber *number = [self decimalNumberByRoundingAccordingToBehavior:behaviour];
     return [number decimalNumberByMultiplyingByPowerOf10: numberOfDecimals].integerValue;
 }
