@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol EditedLabelDelegate: class {
+protocol EditedLabelDelegate: AnyObject {
     func valueWasPastedInsideLabel(_ value:String)
 }
 

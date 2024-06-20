@@ -1,4 +1,5 @@
-platform :ios, '10.0'
+source 'https://cdn.cocoapods.org/'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'ExtensionsFramework' do
